@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nice.immo/sitemap.xml
