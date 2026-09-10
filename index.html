@@ -84,7 +84,8 @@ main{flex:1;display:flex;flex-direction:column;padding:22px 0 0;min-height:0}
 .card-head p{font-size:18px;line-height:1.5;color:var(--color-neutral-800)}
 
 /* Conversation */
-.flux{flex:1;min-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding:6px 2px 10px}
+.flux{position:relative;flex:1;min-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding:6px 2px 10px}
+.flux .cale{flex:none;height:0}
 .msg{max-width:84%;padding:11px 15px;border-radius:12px;font-size:15.5px;line-height:1.55;white-space:pre-wrap;overflow-wrap:break-word}
 .msg.ana{background:var(--color-bg);border:1px solid var(--color-divider);border-bottom-left-radius:3px;align-self:flex-start}
 .msg.moi{background:var(--color-text);color:var(--color-bg);border-bottom-right-radius:3px;align-self:flex-end}
@@ -131,7 +132,7 @@ footer.bottom .ia{margin-left:auto;font-size:11px;letter-spacing:.14em;text-tran
 footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:600;letter-spacing:.06em;color:var(--color-accent-700)}
 
 /* écrans peu hauts (portables) : titre et marges resserrés pour que tout tienne */
-@media (min-width:981px) and (max-height:900px){
+@media (min-width:981px) and (max-height:1000px){
   /* portables : l'en-tête de carte (redit par le message d'accueil) et la note s'effacent, la conversation gagne la place */
   .card-head,.note{display:none}
   .card{padding-top:12px}
@@ -149,7 +150,7 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
   .partner{padding:10px 0 8px;margin-top:10px}
   header.top .wrap{padding-top:12px;padding-bottom:12px}
 }
-@media (min-width:981px) and (max-height:900px){
+@media (min-width:981px) and (max-height:1000px){
   .intro h1{font-size:32px}
   .intro h1 br{display:none}
   .intro p{margin-bottom:10px}
@@ -394,10 +395,24 @@ var d=document.createElement('div');d.className='msg '+cls;
 if(qui){var q=document.createElement('div');q.className='qui';q.textContent=qui;d.appendChild(q);}
 if(imgs&&imgs.length){var ph=document.createElement('div');ph.className='ph';imgs.forEach(function(u){var im=document.createElement('img');im.src=u;ph.appendChild(im);});d.appendChild(ph);}
 if(txt)d.appendChild(document.createTextNode(typo(txt)));
-flux.appendChild(d);
-/* le nouveau message se cale en HAUT de la zone (on lit une réponse depuis son début), pas en bas comme une messagerie */
-flux.scrollTop=Math.max(0,d.getBoundingClientRect().top-flux.getBoundingClientRect().top+flux.scrollTop-4);
+flux.insertBefore(d,cale);
+if(cls==='moi')ancre=d;
+recale();
 }
+/* Lecture dans l'ordre : la dernière question de l'utilisateur se cale en HAUT de la zone et la
+   réponse s'affiche juste dessous, depuis son début. Pour qu'un message court puisse remonter en
+   haut, la zone garde de la place vide sous le dernier échange (padding recalculé à chaque message). */
+var ancre=null;
+var cale=document.createElement('div');cale.className='cale';flux.appendChild(cale); /* espace vide compressible en fin de zone (un padding ne se comprimerait pas) */
+function recale(){
+if(!ancre)return;
+cale.style.height='0px';
+var reste=flux.scrollHeight-ancre.offsetTop;
+var pad=Math.max(0,flux.clientHeight-reste);
+cale.style.height=pad+'px';
+flux.scrollTop=Math.max(0,ancre.offsetTop-4);
+}
+/* au redimensionnement, recale() est appelé par ajusteScene() une fois la hauteur posée */
 function erreur(txt){bulle('sys',null,txt);}
 async function appelWorker(){
 var res=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:msgs})});
@@ -605,10 +620,13 @@ if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();document.getElementById('
    pas d'ascenseur de page, la conversation défile dans la carte ; sous 340 px, la page défile */
 function ajusteScene(){
 var sc=document.querySelector('.scene');
-if(window.innerWidth<981){sc.style.height='';return;}
+if(window.innerWidth<981){sc.style.height='';}
+else{
 var top=sc.getBoundingClientRect().top+window.scrollY;
 var bas=document.querySelector('.partner').offsetHeight+document.querySelector('footer.bottom').offsetHeight+18;
 sc.style.height=Math.max(380,window.innerHeight-top-bas)+'px';
+}
+recale(); /* la zone de conversation vient de changer de hauteur */
 }
 ajusteScene();
 window.addEventListener('resize',ajusteScene);
