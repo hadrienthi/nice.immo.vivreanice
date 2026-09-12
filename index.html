@@ -114,17 +114,27 @@ main{flex:1;display:flex;flex-direction:column;padding:22px 0 0;min-height:0}
 .cr{display:flex;align-items:center;gap:14px;align-self:flex-start;font-size:13px;color:var(--color-neutral-700);padding:2px 0}
 .cr .btn{height:34px;padding:0 16px;font-size:12px}
 /* impression : le compte-rendu ne garde que la conversation */
+/* Étude d'estimation (compte-rendu imprimable, même structure que biarritz.immo, charte Classical) */
+#rapport{display:none}
 @media print{
-  header.top .sans,header.top nav.menu,.plate,.card-head,form.saisie,.note,.partner,footer.bottom .ia,.cr,.attente,.vignettes{display:none!important}
-  body{background:#fff;color:#000}
-  .intro{display:none}
-  main{padding:0}
-  .scene{display:block;height:auto!important;min-height:0}
-  .card{border:0;box-shadow:none;background:none;padding:0;overflow:visible}
-  .flux{overflow:visible;min-height:0;max-height:none!important;display:block}
-  .msg{max-width:100%;page-break-inside:avoid;margin-bottom:10px;border:1px solid #ccc;background:none!important;color:#000!important}
-  .flux .cale{display:none}
-  footer.bottom{border-top:1px solid #ccc;margin-top:16px}
+  @page{margin:16mm 18mm}
+  header.top,main,footer.bottom{display:none!important}
+  body{background:#fff;color:#000;display:block;min-height:0;font-size:13px;line-height:1.5}
+  #rapport{display:block;max-width:720px}
+  #rapport .marque{font-family:var(--font-heading);font-size:34px;font-weight:600;letter-spacing:.5px;margin:0 0 2px}
+  #rapport .marque span{color:var(--color-accent-700)}
+  #rapport .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-700);font-weight:600;margin:14px 0 8px}
+  #rapport .bien{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;font-size:13px}
+  #rapport .bien b{font-weight:600}
+  #rapport .bien .large{grid-column:1/-1}
+  #rapport .valeur{font-family:var(--font-heading);font-size:46px;font-weight:600;line-height:1.05;margin:0}
+  #rapport .sous{font-size:12.5px;color:#444;margin:6px 0 0}
+  #rapport table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:2px}
+  #rapport th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#666;font-weight:600;padding:4px 6px;border-bottom:1px solid #999}
+  #rapport td{padding:6px 6px;border-bottom:1px solid #ddd;vertical-align:top}
+  #rapport td.num{white-space:nowrap}
+  #rapport .methode{font-size:12.5px;color:#222}
+  #rapport .pied{font-size:11px;color:#666;margin-top:16px;border-top:1px solid #ccc;padding-top:8px}
 }
 /* Saisie */
 .vignettes{display:none;gap:8px;padding:8px 0 4px}
@@ -289,6 +299,8 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
     </section>
   </div>
 </main>
+
+<section id="rapport" aria-hidden="true"></section>
 
 <footer class="bottom">
   <div class="wrap">
@@ -457,13 +469,46 @@ flux.scrollTop=Math.max(0,ancre.offsetTop-4);
 /* au redimensionnement, recale() est appelé par ajusteScene() une fois la hauteur posée */
 function erreur(txt){bulle('sys',null,txt);}
 /* compte-rendu (demande du 11/9) : après une estimation, un bouton propose d'enregistrer la conversation en PDF via l'impression du navigateur ; rien n'est transmis */
-var cr=null;
+var cr=null,dernierBien=null,dernierTexte='';
 function proposeCR(){
 if(!cr){cr=document.createElement('div');cr.className='cr';
-  var b=document.createElement('button');b.type='button';b.className='btn';b.textContent='Compte-rendu (PDF)';
-  b.addEventListener('click',function(){window.print();});
-  cr.appendChild(b);var p=document.createElement('span');p.textContent="Enregistrez cette estimation en PDF ou imprimez-la.";cr.appendChild(p);}
+  var b=document.createElement('button');b.type='button';b.className='btn';b.textContent='Étude d’estimation (PDF)';
+  b.addEventListener('click',function(){construitRapport();window.print();});
+  cr.appendChild(b);var p=document.createElement('span');p.textContent="Enregistrez l’étude en PDF ou imprimez-la.";cr.appendChild(p);}
 flux.insertBefore(cr,cale);recale();
+}
+/* ---- étude d'estimation imprimable : chiffres annoncés par l'assistante (à défaut ceux du moteur), bien, comparables, méthode ---- */
+function eur(n){return typo(String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' €');}
+function construitRapport(){
+var R=document.getElementById('rapport');
+if(!dernierBien){R.innerHTML='';return;}
+var e=dernierBien.entree,o=dernierBien.sortie,m=o.moteur||{},c=o.contexte||{};
+var val=m.valeur,bas=m.fourchette_probable&&m.fourchette_probable.basse,haut=m.fourchette_probable&&m.fourchette_probable.haute,pm2=m.prix_m2;
+var t=dernierTexte.replace(/\u202f/g,' ');
+var mEst=t.match(/Estimation\s*:\s*([\d ]+)€/),mF=t.match(/Fourchette probable\s*:\s*([\d ]+)(?:€)?\s*(?:à|-|–)\s*([\d ]+)€/),mP=t.match(/≈\s*([\d ]+)€\/m²/);
+if(mEst)val=+mEst[1].replace(/ /g,'');if(mF){bas=+mF[1].replace(/ /g,'');haut=+mF[2].replace(/ /g,'');}if(mP)pm2=+mP[1].replace(/ /g,'');
+var ETAT={neuf:'Neuf ou refait à neuf',bon:'Bon état',a_rafraichir:'À rafraîchir',a_renover:'À rénover'},ETAGE={rdc:'Rez-de-chaussée',intermediaire:'Étage intermédiaire',dernier:'Dernier étage'},MIT={independante:'Indépendante',un_cote:'Mitoyenne d’un côté',deux_cotes:'Mitoyenne des deux côtés'};
+var maison=e.type==='maison';
+var lignes=[['Adresse du bien',o.adresse_reconnue||e.adresse||'',true],['Type de bien',maison?'Maison':'Appartement'],['Surface',typo((e.surface_m2||'')+' m²')],['Pièces',e.pieces||'Non renseigné'],['État général',ETAT[e.etat]||'Non renseigné'],['DPE (étiquette énergie)',e.dpe||'Non renseigné']];
+if(maison){lignes.push(['Terrain',typeof e.jardin_m2==='number'?typo(e.jardin_m2+' m²'):'Non renseigné'],['Mitoyenneté',MIT[e.mitoyennete]||'Non renseignée'],['Garage',e.garage?'Oui':'Non renseigné']);}
+else{lignes.push(['Étage',ETAGE[e.etage]||'Non renseigné'],['Ascenseur',e.ascenseur===true?'Oui':e.ascenseur===false?'Non':'Non renseigné'],['Balcon / terrasse',typeof e.terrasse_m2==='number'?typo(e.terrasse_m2+' m²'):'Non renseigné'],['Parking (places)',typeof e.parkings==='number'?e.parkings:'Non renseigné']);}
+if(e.vue_mer)lignes.push(['Vue mer','Oui']);
+var esc=function(x){return String(x).replace(/[&<>]/g,function(ch){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[ch];});};
+var h='<p class="marque">NICE.<span>IMMO</span></p><p class="kicker">Étude d’estimation</p>';
+h+='<div class="bien">'+lignes.map(function(l){return '<div'+(l[2]?' class="large"':'')+'><b>'+esc(l[0])+'</b>'+typo(' : ')+esc(l[1])+'</div>';}).join('')+'</div>';
+h+='<p class="kicker">Valeur estimée</p><p class="valeur">'+eur(val)+'</p>';
+h+='<p class="sous">'+(bas&&haut?eur(bas)+' à '+eur(haut)+' · ':'')+(pm2?typo(String(pm2).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' €/m²'):'')+(c.nb_ventes_1000m?' · fondé sur '+typo(c.nb_ventes_1000m+' ventes à moins de 1 km'):'')+'</p>';
+var comps=(o.comparables||[]).slice(0,8);
+if(comps.length){
+h+='<p class="kicker">Ventes comparables à proximité</p><table><thead><tr><th>Adresse</th><th>Type</th><th>m²</th><th>€/m²</th><th>Distance</th><th>Date de vente</th></tr></thead><tbody>';
+var MOIS=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+comps.forEach(function(k){var d=String(k.date||''),dt=d.length>=7?MOIS[+d.slice(5,7)-1]+' '+d.slice(0,4):d;
+h+='<tr><td>'+esc(k.adresse)+'</td><td>'+(k.type==='maison'?'Maison':'Appt')+(k.pieces?' T'+k.pieces:'')+'</td><td class="num">'+typo(k.surface_m2+' m²')+'</td><td class="num">'+typo(String(k.prix_m2).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' €/m²')+'</td><td class="num">'+typo(k.distance_m+' m')+'</td><td>'+esc(dt)+'</td></tr>';});
+h+='</tbody></table>';}
+h+='<p class="kicker">Méthodologie</p><p class="methode">'+typo('Base : '+(m.base_m2_ponderee?'prix moyen de '+String(m.base_m2_ponderee).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' €/m² ':'')+(c.methode==='ventes locales pondérées par distance et récence'?'(ventes réelles 2023-2025 autour de l’adresse, pondérées par la distance et la récence)':'(moyenne communale, faute de ventes suffisantes à proximité)')+', ajusté selon l’état, la surface, le DPE et la vue mer, puis selon le type : étage, ascenseur, terrasse et parking pour un appartement ; mitoyenneté, taille du terrain et garage pour une maison. Fourchette : ± 10 %. '+(c.regle_meme_immeuble&&c.regle_meme_immeuble.indexOf('appliquée')===0?'Base recentrée sur les ventes récentes enregistrées à moins de 50 m (même immeuble ou voisinage immédiat). ':'')+(c.dpe&&c.dpe.indexOf('non')===0?'DPE non renseigné : hypothèse d’une étiquette médiane (D ou E). ':'')+'Cette estimation ne tient pas compte des spécificités du bien ou de l’immeuble : résidence services, bail commercial, monopropriété, charges exceptionnelles, travaux votés, vue ou état particuliers. Pour ces biens, la valeur réelle peut s’écarter fortement de l’estimation : consultez un professionnel local.')+'</p>';
+var dj=new Date();
+h+='<p class="pied">Estimation indicative calculée à partir des données officielles (DVF, DGFiP), sans valeur d’expertise. nice.immo · '+('0'+dj.getDate()).slice(-2)+'/'+('0'+(dj.getMonth()+1)).slice(-2)+'/'+dj.getFullYear()+' · Motoriste IA.IMMO</p>';
+R.innerHTML=h;
 }
 async function appelWorker(){
 var res=await fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:msgs})});
@@ -478,7 +523,7 @@ for(var tour=0;tour<6;tour++){
   var data=await appelWorker();
   var blocs=data.content||[];
   var outils=blocs.filter(function(b){return b.type==='tool_use';});
-  blocs.filter(function(b){return b.type==='text'&&b.text.trim();}).forEach(function(b){var tx=b.text.trim();bulle('ana','Nice.immo',tx);voxParle(tx);if(/^Estimation\s?:/m.test(tx))proposeCR();});
+  blocs.filter(function(b){return b.type==='text'&&b.text.trim();}).forEach(function(b){var tx=b.text.trim();bulle('ana','Nice.immo',tx);voxParle(tx);if(/^Estimation\s?:/m.test(tx)){dernierTexte=tx;proposeCR();}});
   if(data.stop_reason!=='tool_use'||!outils.length){msgs.push({role:'assistant',content:blocs});return;}
   msgs.push({role:'assistant',content:blocs});
   var resultats=[];
@@ -488,6 +533,7 @@ for(var tour=0;tour<6;tour++){
       var impl=TOOL_IMPL[o.name];
       if(!impl)throw new Error('outil inconnu');
       out=await impl(o.input||{});
+      if(o.name==='estimer_bien')dernierBien={entree:o.input||{},sortie:out};
       resultats.push({type:'tool_result',tool_use_id:o.id,content:JSON.stringify(out)});
     }catch(e){
       resultats.push({type:'tool_result',tool_use_id:o.id,content:JSON.stringify({erreur:String(e&&e.message||e)}),is_error:true});
