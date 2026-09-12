@@ -92,8 +92,8 @@ main{flex:1;display:flex;flex-direction:column;padding:22px 0 0;min-height:0}
 .flux .cale{flex:none;height:0}
 .msg{max-width:84%;padding:11px 15px;border-radius:12px;font-size:15.5px;line-height:1.55;white-space:pre-wrap;overflow-wrap:break-word}
 .msg.ana{background:var(--color-bg);border:1px solid var(--color-divider);border-bottom-left-radius:3px;align-self:flex-start}
-.msg.large{max-width:100%;align-self:stretch} /* message d'accueil : toute la largeur de la zone (demande du 11/9) */
-.msg.moi{background:#d9fdd3;color:#111b21;border-bottom-right-radius:3px;align-self:flex-end} /* vert WhatsApp (demande du 11/9) */
+.msg.ana{max-width:100%;align-self:stretch} /* réponses de l'assistante sur toute la largeur de la zone (demande du 11/9) */
+.msg.moi{background:#d4ecc6;color:#111b21;border-bottom-right-radius:3px;align-self:flex-end} /* vert WhatsApp (demande du 11/9) */
 .msg.moi .qui{color:#1f7a3a}
 .msg.sys{background:none;border:1px dashed var(--color-divider);color:var(--color-neutral-700);font-size:13px;align-self:center;text-align:center}
 .qui{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-700);margin-bottom:4px;font-weight:600}
@@ -140,8 +140,8 @@ form.saisie{margin-top:auto;padding-top:10px}
 .envoyer:hover{background:var(--color-accent-100)}
 .envoyer:disabled{opacity:.4;cursor:default}
 /* micro et appareil photo à droite du champ, en vert WhatsApp (demande du 11/9) */
-.champ .vert{width:46px;height:46px;border:0;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;cursor:pointer;flex:none}
-.champ .vert:hover{background:#1ebe5d}
+.champ .vert{width:37px;height:37px;border:0;border-radius:50%;background:#1da851;color:#fff;display:grid;place-items:center;cursor:pointer;flex:none}
+.champ .vert:hover{background:#178f44}
 .champ .vert:disabled{opacity:.35;cursor:default}
 .champ .vert.on{background:#128c7e}
 .champ .vert.ecoute{animation:pulse 1.2s infinite}
@@ -180,7 +180,7 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
   .card-head p{font-size:16px}
   .champ{min-height:56px}
   .envoyer{width:46px;height:46px}
-  .champ .vert{width:42px;height:42px}
+  .champ .vert{width:34px;height:34px}
   .note{margin-top:8px}
   .aide{margin-top:6px;font-size:12px}
   .partner{padding:10px 0 8px;margin-top:10px}
@@ -219,7 +219,7 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
   .msg{max-width:90%;font-size:15px}
   .champ{min-height:58px;padding:4px 6px 4px 14px;gap:8px}
   .lib-photos{display:none} /* pas la place sur mobile */
-  .champ .vert{width:40px;height:40px}
+  .champ .vert{width:32px;height:32px}
   .champ textarea{font-size:16px} /* 16 px minimum : sous ce seuil, iOS et Android zooment sur le champ au focus */
   .envoyer{width:46px;height:46px}
   .partner{flex-direction:column;align-items:flex-start;gap:12px}
