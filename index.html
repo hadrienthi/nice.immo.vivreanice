@@ -271,14 +271,14 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
         <form class="saisie" id="f">
           <div class="champ">
             <label for="saisie" class="sr" hidden>Décrivez votre bien</label>
-            <textarea id="saisie" maxlength="500" rows="1" placeholder="Décrivez ici le bien à estimer…"></textarea>
+            <textarea id="saisie" maxlength="500" rows="1" placeholder="Décrivez ici les caractéristiques du bien…"></textarea>
             <span class="lib-photos" id="lib-photos">Ajouter des photos</span>
             <button type="button" class="vert" id="trombone" aria-label="Joindre des photos du bien" title="Joindre des photos du bien (3 maximum)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></button>
             <button type="button" class="vert" id="micro" aria-label="Dicter votre description" title="Dicter votre description"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"></path></svg></button>
             <button class="envoyer" id="envoyer" type="submit" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-8-7 18-3-7-8-3Z"></path><path d="m11 14 10-11"></path></svg></button>
             <input type="file" id="fichier" accept="image/*" multiple hidden>
           </div>
-          <p class="aide">Pour l’estimation, précisez : adresse, appartement ou maison, surface, nombre de pièces, terrain, étage, ascenseur, état, vue, terrasse, parking, DPE…</p>
+          <p class="aide">Précisez : adresse, appartement ou maison, surface, nombre de pièces, terrain, étage, ascenseur, état, vue, terrasse, parking, DPE…</p>
         </form>
         <p class="note">Estimations indicatives, calculées à partir des ventes notariées publiques (DVF) autour de l'adresse. Rien n'est enregistré.</p>
       </div>
@@ -673,9 +673,9 @@ window.addEventListener('resize',ajusteScene);
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(ajusteScene);
 window.addEventListener('load',ajusteScene);
 /* petit écran : texte d'aide plus court, sinon il est coupé sur deux lignes */
-if(window.matchMedia&&matchMedia('(max-width:820px)').matches)saisie.placeholder='Décrivez le bien à estimer…';
+if(window.matchMedia&&matchMedia('(max-width:820px)').matches)saisie.placeholder='Caractéristiques du bien…';
 /* message d'accueil */
-bulle('ana large','Nice.immo','Bonjour, décrivez le bien à Nice que vous souhaitez faire évaluer par l’IA.');
+bulle('ana large','Nice.immo','Bonjour, décrivez le bien à Nice que vous souhaitez faire estimer par l’IA.');
 </script>
 </body>
 </html>
