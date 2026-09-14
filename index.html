@@ -80,7 +80,9 @@ main{flex:1;display:flex;flex-direction:column;padding:22px 0 0;min-height:0}
 .scene{display:grid;grid-template-columns:26% 1fr;grid-template-rows:minmax(0,1fr);gap:24px;min-height:380px} /* hauteur posée par ajusteScene() */
 .plate{filter:sepia(.14) saturate(.9) contrast(1.04);border:6px solid var(--color-surface);outline:1px solid var(--color-divider);background:var(--color-surface);min-height:0}
 .plate img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.card{border:1px solid var(--color-divider);border-radius:var(--radius-md);background:var(--color-surface);box-shadow:var(--shadow-sm);padding:28px 30px 20px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.card{border:1px solid var(--color-divider);border-radius:var(--radius-md);background:var(--color-surface);box-shadow:var(--shadow-sm);padding:28px 30px 20px;display:flex;flex-direction:column;min-height:0;overflow:hidden;position:relative}
+.card.glisse{outline:2px dashed var(--color-accent);outline-offset:-6px;background:var(--color-accent-100)}
+.card.glisse::after{content:'Déposez vos photos ici';position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-heading);font-size:28px;color:var(--color-accent-700);background:rgba(255,243,228,.85);pointer-events:none}
 .card-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:16px}
 .ana-mark{width:58px;height:58px;border-radius:50%;border:1px solid var(--color-accent);display:grid;place-items:center;flex:none;overflow:hidden;background:var(--color-bg)}
 .ana-mark img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
@@ -547,15 +549,33 @@ throw new Error('Trop d’allers-retours d’outils : recommencez avec une deman
 var MAX_PHOTOS=3,photos=[],photosEnvoyees=0;
 var trombone=document.getElementById('trombone'),fichier=document.getElementById('fichier'),vignettes=document.getElementById('vignettes');
 trombone.addEventListener('click',function(){fichier.click();});
-fichier.addEventListener('change',async function(){
+async function ajoutePhotos(liste){
 var libres=MAX_PHOTOS-photosEnvoyees-photos.length;
-var fs=Array.prototype.slice.call(fichier.files,0,Math.max(0,libres));
+var fs=Array.prototype.slice.call(liste||[]).filter(Boolean);
+if(fs.length>libres&&libres>0)erreur('3 photos maximum par conversation : seules les '+libres+' première'+(libres>1?'s':'')+' ont été gardées.');
+else if(libres<=0&&fs.length){erreur('3 photos maximum par conversation.');return;}
+fs=fs.slice(0,Math.max(0,libres));
 for(var i=0;i<fs.length;i++){
   try{photos.push(await redimPhoto(fs[i]));}
-  catch(e){erreur("Cette image n'a pas pu être lue (format non reconnu).");}
+  catch(e){
+    var nom=(fs[i]&&fs[i].name)||'';
+    if(/\.hei[cf]$/i.test(nom))erreur("Cette photo est au format HEIC (iPhone), que ce navigateur ne sait pas lire : exportez-la en JPEG, ou envoyez-la depuis l'application Photos.");
+    else erreur("Cette image n'a pas pu être lue (format non reconnu).");
+  }
 }
-fichier.value='';
 majVignettes();
+}
+fichier.addEventListener('change',async function(){await ajoutePhotos(fichier.files);fichier.value='';});
+/* glisser-déposer des photos sur la carte de conversation, et collage depuis le presse-papiers (demande du 14/9) */
+var carte=document.querySelector('.card');
+['dragenter','dragover'].forEach(function(ev){carte.addEventListener(ev,function(e){if(e.dataTransfer&&Array.prototype.some.call(e.dataTransfer.types||[],function(t){return t==='Files';})){e.preventDefault();e.dataTransfer.dropEffect='copy';carte.classList.add('glisse');}});});
+['dragleave','drop'].forEach(function(ev){carte.addEventListener(ev,function(e){if(ev==='dragleave'&&carte.contains(e.relatedTarget))return;carte.classList.remove('glisse');});});
+carte.addEventListener('drop',function(e){if(e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files.length){e.preventDefault();ajoutePhotos(e.dataTransfer.files);}});
+document.addEventListener('dragover',function(e){e.preventDefault();});document.addEventListener('drop',function(e){e.preventDefault();}); /* hors de la carte : le navigateur n'ouvre pas l'image à la place du site */
+saisie.addEventListener('paste',function(e){
+var items=(e.clipboardData&&e.clipboardData.items)||[],fs=[];
+for(var i=0;i<items.length;i++)if(items[i].kind==='file'&&/^image\//.test(items[i].type))fs.push(items[i].getAsFile());
+if(fs.length){e.preventDefault();ajoutePhotos(fs);}
 });
 function redimPhoto(file){
 return new Promise(function(resolve,reject){
