@@ -285,7 +285,7 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
             <textarea id="saisie" maxlength="500" rows="1" placeholder="Adresse, surface, étage, état du bien, photos d'annonce…"></textarea>
             <span class="lib-photos" id="lib-photos">Ajouter des photos</span>
             <button type="button" class="vert" id="trombone" aria-label="Joindre des photos du bien" title="Joindre des photos du bien (3 maximum)"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></button>
-            <button type="button" class="vert" id="micro" aria-label="Parler" title="Mode vocal : parlez, la réponse est lue à voix haute"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"></path></svg></button>
+            <button type="button" class="vert" id="micro" aria-label="Dicter votre description" title="Dicter votre description"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"></path></svg></button>
             <button class="envoyer" id="envoyer" type="submit" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-8-7 18-3-7-8-3Z"></path><path d="m11 14 10-11"></path></svg></button>
             <input type="file" id="fichier" accept="image/*" multiple hidden>
           </div>
@@ -525,7 +525,7 @@ for(var tour=0;tour<6;tour++){
   var data=await appelWorker();
   var blocs=data.content||[];
   var outils=blocs.filter(function(b){return b.type==='tool_use';});
-  blocs.filter(function(b){return b.type==='text'&&b.text.trim();}).forEach(function(b){var tx=b.text.trim();bulle('ana','Nice.immo',tx);voxParle(tx);if(/^Estimation\s?:/m.test(tx)){dernierTexte=tx;proposeCR();}});
+  blocs.filter(function(b){return b.type==='text'&&b.text.trim();}).forEach(function(b){var tx=b.text.trim();bulle('ana','Nice.immo',tx);if(/^Estimation\s?:/m.test(tx)){dernierTexte=tx;proposeCR();}});
   if(data.stop_reason!=='tool_use'||!outils.length){msgs.push({role:'assistant',content:blocs});return;}
   msgs.push({role:'assistant',content:blocs});
   var resultats=[];
@@ -620,107 +620,42 @@ emojiPal.appendChild(b);
 });
 emojiBtn.addEventListener('click',function(ev){ev.stopPropagation();emojiPal.hidden=!emojiPal.hidden;});
 document.addEventListener('click',function(ev){if(!emojiPal.hidden&&!emojiPal.contains(ev.target))emojiPal.hidden=true;});
-/* ---- mode vocal : reconnaissance et synthèse du navigateur ---- */
+/* ---- dictée (décision du 14/9) : on parle, le texte s'écrit dans le champ, on relit et on envoie soi-même ; plus de lecture à voix haute ---- */
 var micro=document.getElementById('micro');
-var VOX_SILENCE=2000; /* ms de silence avant l'envoi : laisse le temps de respirer et d'hésiter */
-var vox={actif:false,rec:null,ecoute:false,voix:null,tampon:'',minuteur:null};
-function voxNormalise(t){
-return t.replace(/\u202f/g,' ')
- .replace(/€\/m²/g,'euros par mètre carré')
- .replace(/\/m²/g,' par mètre carré')
- .replace(/m²/g,'mètres carrés')
- .replace(/±/g,'plus ou moins')
- .replace(/≈/g,'environ')
- .replace(/^·\s*/gm,'')
- .replace(/€/g,'euros');
-}
-function voxChoisirVoix(){
-var vs=window.speechSynthesis?speechSynthesis.getVoices():[];
-var fr=vs.filter(function(v){return /^fr/i.test(v.lang);});
-var ordre=[/google/i,/am[eé]lie|audrey|aur[eé]lie/i,/^fr-FR$/];
-var choix=null;
-choix=fr.filter(function(v){return ordre[0].test(v.name);})[0]
-  ||fr.filter(function(v){return ordre[1].test(v.name);})[0]
-  ||fr.filter(function(v){return ordre[2].test(v.lang);})[0]
-  ||fr[0]||null;
-vox.voix=choix;
-}
-if(window.speechSynthesis){speechSynthesis.onvoiceschanged=voxChoisirVoix;voxChoisirVoix();}
-function voxParle(txt){
-if(!vox.actif||!window.speechSynthesis)return;
-var phrases=voxNormalise(txt).split(/(?<=[.!?])\s+|\n+/).filter(function(x){return x.trim();}); /* une phrase ou une ligne par énoncé (restitution structurée) */
-phrases.forEach(function(ph){
-var u=new SpeechSynthesisUtterance(ph);
-if(vox.voix)u.voice=vox.voix;
-u.lang='fr-FR';u.rate=1.03;
-speechSynthesis.speak(u);
-});
-}
-function voxEcoute(on){
-if(!vox.rec)return;
-if(on&&vox.actif&&!vox.ecoute){try{vox.rec.start();}catch(e){}}
-if(!on&&vox.ecoute){try{vox.rec.stop();}catch(e){}}
-}
-function voxReprendreApresParole(){
-if(!vox.actif)return;
-var t=setInterval(function(){
-if(!vox.actif){clearInterval(t);return;}
-if(!(window.speechSynthesis&&speechSynthesis.speaking)&&!occupe){clearInterval(t);voxEcoute(true);}
-},300);
-}
-function voxInit(){
+var dictee={rec:null,ecoute:false,avant:''};
+function dicteeInit(){
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 if(!SR)return false;
 var r=new SR();
 r.lang='fr-FR';r.interimResults=true;r.continuous=true;
-r.onstart=function(){vox.ecoute=true;micro.classList.add('ecoute');};
-r.onend=function(){vox.ecoute=false;micro.classList.remove('ecoute');
-if(vox.tampon.trim()&&vox.actif&&!occupe){voxEnvoie();return;}
-if(vox.actif&&!occupe&&!(window.speechSynthesis&&speechSynthesis.speaking))voxEcoute(true);};
+r.onstart=function(){dictee.ecoute=true;micro.classList.add('on','ecoute');micro.title='Dictée en cours : cliquez pour arrêter';};
+r.onend=function(){dictee.ecoute=false;micro.classList.remove('on','ecoute');micro.title='Dicter votre description';saisie.value=saisie.value.trim();if(!(window.matchMedia&&matchMedia('(pointer:coarse)').matches))saisie.focus();};
 r.onresult=function(ev){
 var fin='',brouillon='';
 for(var i=0;i<ev.results.length;i++){
   if(ev.results[i].isFinal)fin+=ev.results[i][0].transcript+' ';
   else brouillon+=ev.results[i][0].transcript;
 }
-vox.tampon=fin;
-saisie.value=(fin+brouillon).trim();
-clearTimeout(vox.minuteur);
-vox.minuteur=setTimeout(voxEnvoie,VOX_SILENCE);
+saisie.value=(dictee.avant+(dictee.avant?' ':'')+fin+brouillon).replace(/\s+/g,' ').trimStart();
 };
 r.onerror=function(ev){
-vox.ecoute=false;micro.classList.remove('ecoute');
-if(ev.error==='not-allowed'){erreur("Micro refusé : autorisez-le dans la barre d'adresse pour utiliser le mode vocal.");voxBascule(false);}
+dictee.ecoute=false;micro.classList.remove('on','ecoute');
+if(ev.error==='not-allowed')erreur("Micro refusé : autorisez-le dans la barre d'adresse pour dicter votre description.");
 };
-vox.rec=r;return true;
-}
-function voxEnvoie(){
-clearTimeout(vox.minuteur);
-if(!vox.actif||occupe)return;
-var t=(vox.tampon||saisie.value||'').trim();
-if(!t)return;
-saisie.value=t;vox.tampon='';
-document.getElementById('f').dispatchEvent(new Event('submit'));
-try{vox.rec.stop();}catch(e){}
-}
-function voxBascule(on){
-vox.actif=on;
-micro.classList.toggle('on',on);
-if(on)voxEcoute(true);
-else{voxEcoute(false);clearTimeout(vox.minuteur);vox.tampon='';if(window.speechSynthesis)speechSynthesis.cancel();}
+dictee.rec=r;return true;
 }
 micro.addEventListener('click',function(){
-if(!vox.actif){
-if(!vox.rec&&!voxInit()){erreur("La reconnaissance vocale n'est pas disponible dans ce navigateur : utilisez Chrome.");return;}
-voxBascule(true);
-}else voxBascule(false);
+if(dictee.ecoute){try{dictee.rec.stop();}catch(e){}return;}
+if(!dictee.rec&&!dicteeInit()){erreur("La dictée n'est pas disponible dans ce navigateur : utilisez Chrome ou Safari.");return;}
+dictee.avant=saisie.value.trim(); /* ce qui était déjà tapé est conservé, la dictée s'ajoute à la suite */
+try{dictee.rec.start();}catch(e){}
 });
 document.getElementById('f').addEventListener('submit',async function(ev){
 ev.preventDefault();
 if(occupe)return;
 var t=saisie.value.trim();
 if(!t&&!photos.length)return;
-occupe=true;envoyer.disabled=true;saisie.value='';
+occupe=true;envoyer.disabled=true;saisie.value='';if(dictee.ecoute){try{dictee.rec.stop();}catch(e){}}
 if(photos.length){
   if(!t)t='Voici des photos du bien.';
   var contenu=photos.map(function(u){return{type:'image',source:{type:'base64',media_type:'image/jpeg',data:u.split(',')[1]}};});
@@ -740,9 +675,8 @@ catch(e){
   while(msgs.length&&msgs[msgs.length-1].role==='user')msgs.pop();
 }
 finally{penser(false);occupe=false;envoyer.disabled=false;
-  /* pas de focus automatique en mode vocal ni sur écran tactile : il ferait monter le clavier et zoomer la page */
-  if(!vox.actif&&!(window.matchMedia&&matchMedia('(pointer:coarse)').matches))saisie.focus();
-  if(vox.actif)voxReprendreApresParole();}
+  /* pas de focus automatique sur écran tactile : il ferait monter le clavier et zoomer la page */
+  if(!(window.matchMedia&&matchMedia('(pointer:coarse)').matches))saisie.focus();}
 });
 saisie.addEventListener('keydown',function(ev){
 if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();document.getElementById('f').dispatchEvent(new Event('submit'));}
