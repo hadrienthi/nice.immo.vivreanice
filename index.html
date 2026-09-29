@@ -358,6 +358,7 @@ var VILLE={"nom":"Nice","citycode":"06088","pm2Appt":4804,"pm2Maison":6500,"idxA
 var WORKER_BASE='https://ana-relais.hadrien-thine.workers.dev'; /* routes du parcours hybride : /photos, /restitution, /avis */
 /* ================= MOTEUR (repris de _maquette-ana, SANS quartiers : repli communal) ================= */
 var BAN='https://api-adresse.data.gouv.fr/search/';
+var VOIES_URL='voies-nice.txt'; /* index local des voies de la commune (29/9), à côté de la page */
 function haversine(la1,lo1,la2,lo2){var R=6371000,r=Math.PI/180,dla=(la2-la1)*r,dlo=(lo2-lo1)*r,a=Math.sin(dla/2)*Math.sin(dla/2)+Math.cos(la1*r)*Math.cos(la2*r)*Math.sin(dlo/2)*Math.sin(dlo/2);return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));}
 var SECTIONS=VILLE.sections.split(';').map(function(s){var a=s.split(':'),c=a[1].split(',');return{id:a[0],lat:+c[0],lon:+c[1]};});
 var IDX_APPT=VILLE.idxAppt,IDX_MAISON=VILLE.idxMaison;
@@ -784,31 +785,77 @@ var d=bulle('sys',null,t);d.classList.add('tmp');recale();
    et son garde-fou sosie (19/9) ---- */
 var suggZone=null,suggMinuterie=null;
 function suggEfface(){clearTimeout(suggMinuterie);if(suggZone&&suggZone.parentNode)suggZone.parentNode.removeChild(suggZone);suggZone=null;}
+/* INDEX LOCAL DES VOIES (29/9, constat Hadrien : « 33 rue b » ne proposait
+   plus rien, Rue Barberis comprise). Cause mesurée : la BAN ne renvoie RIEN
+   pour un mot d'une lettre et fait de l'approximation (pas du préfixe) à deux
+   lettres ; elle ne devient utile qu'à la 3e lettre du nom de voie. La page
+   embarque donc la liste des voies de la commune (voies-nice.txt : une voie
+   par ligne, « nom <tab> code postal », tirée de l'export BAN de la commune,
+   2 121 voies) et propose elle-même, sans réseau, dès la première lettre.
+   Les réponses de la BAN, quand elle en a, passent devant ; quand elle n'en a
+   pas, la liste locale reste. Sans le fichier (404, panne) : comportement
+   d'avant, BAN seule. Le clic sur une proposition locale repasse par
+   geocodeVille (numéro exact + garde-fou sosie) : rien n'est validé sans la
+   BAN. */
+var VOIES=null;
+function motsVoie(t){return String(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
+fetch(VOIES_URL).then(function(r){return r.ok?r.text():'';}).then(function(t){
+var l=t.split('\n').filter(Boolean).map(function(x){var p=x.split('\t');return {nom:p[0],cp:p[1]||'',cle:motsVoie(p[0])};});
+if(l.length)VOIES=l;
+}).catch(function(){});
+/* propositions locales pour la saisie t : { label, texte } ; numéro conservé */
+function voiesLocales(t){
+if(!VOIES)return [];
+var m=t.match(/^\s*(\d+(?:\s*(?:bis|ter))?)\s+(.+)$/i),num=m?m[1].replace(/\s+/g,' '):'',reste=motsVoie(m?m[2]:t);
+if(!reste)return [];
+var mots=reste.split(' '),tete=[],corps=[];
+for(var i=0;i<VOIES.length&&tete.length<6;i++){
+var v=VOIES[i],vm=v.cle.split(' '),ok=true;
+for(var j=0;j<mots.length&&ok;j++){var w=mots[j],trouve=false;for(var k=0;k<vm.length;k++){if(vm[k].indexOf(w)===0){trouve=true;break;}}ok=trouve;}
+if(!ok)continue;
+if(v.cle.indexOf(reste)===0)tete.push(v);else if(corps.length<6)corps.push(v);
+}
+return tete.concat(corps).slice(0,6).map(function(v){
+var texte=(num?num+' ':'')+v.nom;
+return {label:texte+(v.cp?' '+v.cp:'')+' '+VILLE.nom,texte:texte};
+});
+}
+/* affichage des puces ; item.label = texte de la puce ; item.texte = saisie à
+   géocoder au clic (propositions locales) ; sans texte (BAN) : validé tel quel */
+function suggAffiche(items){
+suggEfface();
+if(!items.length)return;
+suggZone=document.createElement('div');suggZone.className='puces';
+items.forEach(function(it){
+var b=document.createElement('button');b.type='button';b.className='puce';b.textContent=it.label;
+b.addEventListener('click',function(){if(occupe)return;if(it.texte){saisie.value=it.texte;validerAdresseLibre(it.texte);}else adresseValidee(it.label);});
+suggZone.appendChild(b);
+});
+flux.appendChild(suggZone);recale();
+}
 saisie.addEventListener('input',function(){
 if(modeSaisie!=='adresse')return;
 clearTimeout(suggMinuterie);
 var t=saisie.value.trim();
 if(t.length<4){suggEfface();return;}
+var locales=voiesLocales(t);
+if(locales.length)suggAffiche(locales); /* immédiat, sans réseau */
 suggMinuterie=setTimeout(function(){
 fetch(BAN+'?'+new URLSearchParams({q:t,citycode:VILLE.citycode,limit:6,autocomplete:1}))
 .then(function(r){return r.ok?r.json():null;})
 .then(function(j){
-if(modeSaisie!=='adresse')return;
+if(modeSaisie!=='adresse'||saisie.value.trim()!==t)return; /* réponse en retard : la saisie a changé */
 var fts=((j&&j.features)||[]).filter(function(f){return f.properties.citycode===VILLE.citycode;});
 /* un numéro tapé -> uniquement des propositions AU numéro (jamais la voie
    seule, qui ferait perdre le numéro au clic) ; sans numéro, voies et
    numéros sont proposés */
 var avecNum=/^\s*\d/.test(t);
 fts=fts.filter(function(f){var ty=f.properties.type;return avecNum?ty==='housenumber':(ty==='housenumber'||ty==='street');});
-suggEfface();
-if(!fts.length)return;
-suggZone=document.createElement('div');suggZone.className='puces';
-fts.forEach(function(f){
-var b=document.createElement('button');b.type='button';b.className='puce';b.textContent=f.properties.label;
-b.addEventListener('click',function(){if(occupe)return;adresseValidee(f.properties.label);});
-suggZone.appendChild(b);
-});
-flux.appendChild(suggZone);recale();
+if(!fts.length){if(!locales.length)suggEfface();return;} /* BAN muette : la liste locale reste */
+var items=fts.map(function(f){return {label:f.properties.label};}),vus={};
+items.forEach(function(it){vus[motsVoie(it.label)]=1;});
+locales.forEach(function(it){var c=motsVoie(it.label);if(items.length<6&&!vus[c]){vus[c]=1;items.push(it);}});
+suggAffiche(items);
 }).catch(function(){});
 },280);
 });
@@ -1207,6 +1254,10 @@ if(modeSaisie==='nombre'){
   repond(etapeCourante,Math.round(n),false);
   return;
 }
+validerAdresseLibre(t);
+});
+/* adresse tapée (ou proposition locale cliquée) : géocodage BAN + garde-fou sosie */
+async function validerAdresseLibre(t){
 occupe=true;envoyer.disabled=true;suggEfface();
 try{
   var geo=await geocodeVille(t);
@@ -1220,7 +1271,7 @@ try{
   else if(/indisponible|Failed|NetworkError|fetch/i.test(msgErr))bulleErreurSaisie('Le service d’adresse est momentanément indisponible : réessayez dans un instant.');
   else bulleErreurSaisie('Cette adresse n’est pas reconnue à Nice : vérifiez le numéro et la rue, puis réessayez.');
 }
-});
+}
 /* ajustement à la hauteur de l'écran (27/9, constat sur le MacBook du père :
    ascenseur dès l'accueil, pas sur l'iMac) : sur ordinateur, si l'accueil ne
    tient pas en hauteur, toute la page est réduite d'un même facteur (zoom,

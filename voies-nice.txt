@@ -1,0 +1,2121 @@
+Allée Albert Ribollet	06000
+Allée Alice	06100
+Allée Anne Frank	06200
+Allée Barney Wilen	06000
+Allée Camille Muffat	06200
+Allée Casal	06100
+Allée Cavendish	06000
+Allée Centrale	06000
+Allée Charles Martin-Sauvaigo	06200
+Allée Charles Pasqua	06000
+Allée Cheret	06000
+Allée Coretta Scott King	06200
+Allée Dali	06000
+Allée de desserte de la clinique Saint-Barthélemy	06100
+Allée de la Chapelle Saint-Pierre	06000
+Allée de la Clairière	06000
+Allée de la Palmeraie	06300
+Allée de la Reine	06000
+Allée de la Résidence Le Panoramic	06300
+Allée de la Tour des Gardes	06200
+Allée dei Verna	06200
+Allée des Bugadières	06300
+Allée des Chênes	06000
+Allée des Citronniers	06100
+Allée des Faunes	06000
+Allée des Hespérides	06300
+Allée des Isnards	06300
+Allée des Italiens	06300
+Allée des Justes	06300
+Allée des Lions	06200
+Allée des Lucioles	06100
+Allée des Mimosas	06200
+Allée des Oliviers	06000
+Allée Dizzy Gillespi	06000
+Allée du Bois Dormant	06300
+Allée du Chêne Vert	06000
+Allée du Palais	06000
+Allée du Paradou	06300
+Allée du Petit Fabron	06200
+Allée du Rond-Point	06100
+Allée du Souvenir	06100
+Allée Duke Ellington	06000
+Allée Edith Piaf	06000
+Allée François Aragon	06300
+Allée Gaby Morlay	06200
+Allée Gauguin	06000
+Allée Giacometti	06200
+Allée Henri Bosco	06000
+Allée Henri Farman	06200
+Allée Henry Ruhl	06000
+Allée Honoré Bellon	06200
+Allée Honorine	06100
+Allée Jules Isaac	06000
+Allée Laura Borla	06200
+Allée Lucie et Raymond Aubrac	06000
+Allée Maurice Maeterlinck	06300
+Allée Miles Davis	06000
+Allée Netanya	06300
+Allée Nicolas II	06000
+Allée Olympe de Gouges	06200
+Allée Philippe Séguin	06000
+Allée Professeur Fernand Benoit	06300
+Allée Renoir	06000
+Allée Résistance et Déportation	06000
+Allée Rosa Parks	06300
+Allée Saint-Gabriel	06000
+Allée Sandro Pertini	06000
+Allée Soeur Emmanuelle	06200
+Allée Thiole	06000
+Allée Victoria	06100
+Ancien Chemin Cal de Spagnol	06200
+Ancien Chemin de Candéu	06200
+Ancien Chemin de Caucade	06200
+Ancien Chemin de Cimiez et de Saint-Pons	06000
+Ancien Chemin de Falicon	06100
+Ancien Chemin de l'Abadie	06300
+Ancien Chemin de l'Abadie à l'Ariane	06300
+Ancien Chemin de l'Archet	06200
+Ancien Chemin de l'Ariane	06300
+Ancien Chemin de l'Eglise de Saint-Barthélemy	06100
+Ancien Chemin de la Batterie de Saint-Aubert	06300
+Ancien Chemin de la Costière	06000
+Ancien Chemin de la Ginestière	06200
+Ancien Chemin de la Lanterne	06200
+Ancien Chemin de la Madeleine	06000
+Ancien Chemin de la Séréna	06100
+Ancien Chemin de Saint-Barthélemy et Saint-Sylvestre	06100
+Ancien Chemin de Saint-Philippe à Magnan	06000
+Ancien Chemin de Saint-Pierre de Féric	06000
+Ancien Chemin de Sainte-Marguerite n°1	06200
+Ancien Chemin de Sainte-Marguerite n°2	06200
+Ancien Chemin de Sainte-Marguerite n°3	06200
+Ancien Chemin de Sainte-Thérèse	06000
+Ancien Chemin des Moulins	06300
+Ancien Chemin du Col de Bast	06100
+Ancien Chemin du Ray et d'Aspremont	06100
+Ancienne Route stratégique du Mas Duc	06300
+Ancienne Route stratégique du Mont Leuze	06300
+Avenue Adolphe Isnard-Serrat	06000
+Avenue Aimé Martin	06200
+Avenue Alfred Borriglione	06100
+Avenue Alfred de Musset	06100
+Avenue Alfred de Vigny	06100
+Avenue Alfred Leroux	06300
+Avenue Amiral Courbet	06100
+Avenue Amouroux	06100
+Avenue Anatole France	06000
+Avenue André Bauduc	06100
+Avenue André Chénier	06100
+Avenue Angélique Braquet	06200
+Avenue Ansaldi	06200
+Avenue Antoine Galante	06200
+Avenue Antoine Martin	06200
+Avenue Antoine Véran	06100
+Avenue Antonia Augusta	06000
+Avenue Appraxine	06200
+Avenue Auber	06000
+Avenue Audiffret	06100
+Avenue Auguste Duplay	06100
+Avenue Auguste Vérola	06200
+Avenue Balbi	06100
+Avenue Banco	06300
+Avenue Baquis	06000
+Avenue Bardi	06100
+Avenue Béatrix	06100
+Avenue Beau Site	06000
+Avenue Beau Soleil	06000
+Avenue Bella Vista	06100
+Avenue Bellanda	06000
+Avenue Bellevue	06100
+Avenue Bieckert	06000
+Avenue Brès	06300
+Avenue Buenos Ayres	06000
+Avenue Cagnoli	06100
+Avenue Cap de Croix	06100
+Avenue Capitaine Fischer	06200
+Avenue Caravadossi	06000
+Avenue Castellane	06100
+Avenue Cauvin	06100
+Avenue Cernuschi	06100
+Avenue Chantal	06100
+Avenue Charles Buchet	06200
+Avenue Charles Félix Fracchia	06300
+Avenue Charles Lindbergh	06200
+Avenue Chateaubriand	06100
+Avenue Claude Debussy	06200
+Avenue Claude Gimelle	06100
+Avenue Clément Ader	06100
+Avenue Coda	06100
+Avenue Colombo	06000
+Avenue Comba	06000
+Avenue Commandant Galliache	06200
+Avenue Commandant Guilbaud	06100
+Avenue Comte Edwin Garin	06000
+Avenue Coquette	06100
+Avenue Costa Bella	06200
+Avenue Cyrille Besset	06100
+Avenue Cyrnos	06100
+Avenue d'Alsace	06000
+Avenue d'Anvers	06000
+Avenue d'Artois	06000
+Avenue Daviot	06100
+Avenue de Béarn	06000
+Avenue de Bellet	06200
+Avenue de Blanchetti	06100
+Avenue de Brancolar	06100
+Avenue de Bruxelles	06000
+Avenue de Carras	06200
+Avenue de Chambrun	06100
+Avenue de Champagne	06100
+Avenue de Cuverville	06100
+Avenue de Fabron	06200
+Avenue de Féric	06100
+Avenue de Flirey	06000
+Avenue de Gairaut	06100
+Avenue de Gien	06000
+Avenue de Grignan	06100
+Avenue de l'Arbre Inférieur	06000
+Avenue de l'Assomption	06100
+Avenue de l'Olivetto	06000
+Avenue de l'Ouest	06300
+Avenue de la Bornala	06200
+Avenue de la Californie	06200
+Avenue de la Clua	06100
+Avenue de la Colline	06000
+Avenue de la Corniche d'Azur	06100
+Avenue de la Floride	06200
+Avenue de la Forêt	06100
+Avenue de la Lanterne	06200
+Avenue de la Madelon	06100
+Avenue de la Madonette	06100
+Avenue de la Marne	06100
+Avenue de la Méditerranée	06200
+Avenue de la Mer	06300
+Avenue de la Pastorelle	06200
+Avenue de la Rade	06300
+Avenue de la République	06300
+Avenue de la Réserve	06300
+Avenue de la Roseraie	06300
+Avenue de la Source	06100
+Avenue de la Vallière	06100
+Avenue de la Vallière prolongée	06100
+Avenue de Mendiguren	06000
+Avenue de Normandie	06000
+Avenue de Pessicart	06100
+Avenue de Picardie	06000
+Avenue de Plaisance	06100
+Avenue de Provence	06000
+Avenue de Reims	06100
+Avenue de Rimiez	06100
+Avenue de Savoie	06000
+Avenue de Suède	06000
+Avenue de Valombrose	06000
+Avenue de Verdun	06000
+Avenue de Villebois-Mareuil	06000
+Avenue Delphine	06100
+Avenue Denis Semeria	06300
+Avenue Depoilly	06000
+Avenue des Agaves	06000
+Avenue des Anthémis	06200
+Avenue des Arènes de Cimiez	06000
+Avenue des Aubépines	06300
+Avenue des Baumettes	06000
+Avenue des Bleuets	06300
+Avenue des Bosquets	06200
+Avenue des Chênes	06100
+Avenue des Chênes Victoria Park	06300
+Avenue des Diables Bleus	06300
+Avenue des Eglantines	06300
+Avenue des Eucalyptus	06200
+Avenue des Fleurs	06000
+Avenue des Floralies	06200
+Avenue des Freesias	06200
+Avenue des Frères Wright	06200
+Avenue des Genets	06100
+Avenue des Glaieuls	06100
+Avenue des Grenouillères	06200
+Avenue des Hespérides	06300
+Avenue des Iris	06300
+Avenue des Lucioles	06100
+Avenue des Magnolias	06200
+Avenue des Mandariniers	06200
+Avenue des Mimosas	06100
+Avenue des Mousquetaires	06100
+Avenue des Oliviers	06100
+Avenue des Orangers	06000
+Avenue des Palmiers	06200
+Avenue des Palmiers Henri Dunant	06100
+Avenue des Pâquerettes	06300
+Avenue des Pergolas	06200
+Avenue des Pins	06200
+Avenue des Platanes	06100
+Avenue des Platanes prolongée	06100
+Avenue des Poilus	06100
+Avenue des Roches Choisies	06000
+Avenue des Roches d'Or	06300
+Avenue des Roses	06100
+Avenue des Sapeurs Pompiers de Nice	06300
+Avenue des Sources	06100
+Avenue Desambrois	06000
+Avenue Didier Daurat	
+Avenue Dillies	06300
+Avenue Docteur Bergounie	06000
+Avenue Docteur Emile Roux	06200
+Avenue Docteur Maria Rivoire-Vigon	06200
+Avenue Docteur Ménard	06000
+Avenue Docteur Robert Moriez	06000
+Avenue Docteur Victor Robini	06200
+Avenue Doyen Jean Lépine	06100
+Avenue Doyen Louis Trotabas	06000
+Avenue du Bois	06000
+Avenue du Bois de Cythère	06000
+Avenue du Caire	06100
+Avenue du Cap de Nice	06300
+Avenue du Capitaine Scott	06300
+Avenue du Caroubier	06300
+Avenue du Castel	06300
+Avenue du Castel Enchanté	06000
+Avenue du Château de la Tour	06000
+Avenue du Col de Bast	06100
+Avenue du Colonel Evans	06000
+Avenue du Dauphiné	06000
+Avenue du Domaine de Saint-Exupéry	06100
+Avenue du Domaine du Piol	06000
+Avenue du Maréchal Maunoury	06100
+Avenue du Monastère	06000
+Avenue du Mont Alban	06300
+Avenue du Paradis	06300
+Avenue du Parc	06100
+Avenue du Parc Athénée	06000
+Avenue du Parc de Cimiez	06000
+Avenue du Parc Ferber	06200
+Avenue du Parc Mosca	06000
+Avenue du Parc Robiony	06000
+Avenue du Parc Vigier	06300
+Avenue du Patrimoine	06100
+Avenue du Petit Fabron	06200
+Avenue du Plateau de l'Eden Park	06100
+Avenue du Plateau de Rimiez	06100
+Avenue du Plateau du Mont Boron	06300
+Avenue du Printemps	06000
+Avenue du Puits	06000
+Avenue du Ray	06100
+Avenue du Rond-Point	06200
+Avenue du Super Righi	06100
+Avenue du Teiras	06300
+Avenue du Train des Pignes	06200
+Avenue du Trident	06300
+Avenue du Vallon des Fleurs	06100
+Avenue du XVe Corps	06000
+Avenue Dunan-Bonifassi	06300
+Avenue Durante	06000
+Avenue Eden Park	06000
+Avenue Edith Cavell	06000
+Avenue Edmond Rostand	06100
+Avenue Edouard Brown-Séquard	06000
+Avenue Edouard Grinda	06200
+Avenue Edouard Liautaud	06300
+Avenue Elisabeth	06100
+Avenue Emile Bieckert	06000
+Avenue Emile Henriot	06000
+Avenue Emile Ripert	06300
+Avenue Emilia	06000
+Avenue Emilie	06100
+Avenue Emmanuel Bridault	06000
+Avenue Emmanuel Pontrémoli	06200
+Avenue Ernest Lairolle	06100
+Avenue Ernestine	06300
+Avenue Etienne	06200
+Avenue Fanny	06100
+Avenue Félix Faure	06000
+Avenue Ferrix	06100
+Avenue Fighiera - Pasquier	06100
+Avenue Fleurie	06300
+Avenue Flora	06000
+Avenue Flores	06000
+Avenue Fragonard	06100
+Avenue François Bottau	06100
+Avenue François Mitterrand	06300
+Avenue Frédéric Mistral	06100
+Avenue Frémont	06200
+Avenue Gallieni	06000
+Avenue Gallin	06100
+Avenue Gambart	06200
+Avenue Gattamua	06200
+Avenue Gay	06000
+Avenue Gay prolongée	06000
+Avenue Général Estienne	06000
+Avenue Général Leclerc	06300
+Avenue Général Olry	06300
+Avenue Général Weygand	06000
+Avenue George Sand	06100
+Avenue George V	06000
+Avenue Georges Bizet	06100
+Avenue Georges Clemenceau	06000
+Avenue Germaine	06300
+Avenue Giacobi	06300
+Avenue Gilly	06100
+Avenue Gloria	06200
+Avenue Goldenberg-Garbowska	06100
+Avenue Gravier	06100
+Avenue Gustave Eiffel	06200
+Avenue Gustave Nadaud	06000
+Avenue Gustave V	06000
+Avenue Gustavin	06300
+Avenue Guy de Maupassant	06100
+Avenue Haig	06100
+Avenue Henri Barbusse	06100
+Avenue Henri Germain	06100
+Avenue Henri Matisse	06200
+Avenue Henry Dunant	06100
+Avenue Henry Guillaumet	06200
+Avenue Henry Musso	06100
+Avenue Honoré d'Estienne d'Orves	06000
+Avenue Honoré d'Estienne d'Orves prolongée	06000
+Avenue Isabelle	06000
+Avenue Jean Aicard	06000
+Avenue Jean de La Fontaine	06100
+Avenue Jean Lorrain	06300
+Avenue Jean Marguerite	06100
+Avenue Jean Médecin	06000
+Avenue Jean Richepin	06000
+Avenue Jean Sebastien Barès	06100
+Avenue Jeanne Marlin	06300
+Avenue Joachim	06100
+Avenue Joliette	06100
+Avenue José-Bernard	06300
+Avenue Joseph Durandy	06200
+Avenue Joseph Giordan	06200
+Avenue Joseph Raybaud	06000
+Avenue Joseph Revelli	06000
+Avenue Joseph Saqui	06100
+Avenue Joseph Vallot	06100
+Avenue Jules Romains	06100
+Avenue Julien	06100
+Avenue Juvenal	06100
+Avenue Lacroix	06100
+Avenue Laurent	06200
+Avenue Le Mesnil	06200
+Avenue Leliwa	06200
+Avenue Leo Imbert	06100
+Avenue Léopold II	06000
+Avenue Lieutenant Chaix	06200
+Avenue Lieutenant Ecochard	06200
+Avenue Lieutenant Emile Charpentier	06100
+Avenue Lieutenant Henri de Royou	06200
+Avenue Liserb	06000
+Avenue Lorenzi	06100
+Avenue Louis Cappatti	06200
+Avenue Louis Cochois	06000
+Avenue Louis Janion	06000
+Avenue Louis Prevel	06100
+Avenue Lympia	06300
+Avenue Lympia (privée)	06300
+Avenue Maître Maurice Slama	06200
+Avenue Malausséna	06000
+Avenue Marconi	06100
+Avenue Maréchal Foch	06000
+Avenue Maréchal Lyautey	06000
+Avenue Maréchal Ney	06300
+Avenue Marianna	06000
+Avenue Marie-Christine	06000
+Avenue Marius Raveu	06200
+Avenue Martin Luther King	06200
+Avenue Max Gallo	06300
+Avenue Maximiliana	06100
+Avenue Michel Bacos	06200
+Avenue Michel de Cimiez	06000
+Avenue Milinski	06000
+Avenue Milon de Véraillon	06300
+Avenue Miltat	06100
+Avenue Mirabeau	06000
+Avenue Mirasol	06100
+Avenue Mireille	06100
+Avenue Mireio	06100
+Avenue Monplaisir	06100
+Avenue Mont Rabeau	06200
+Avenue Montclar	06100
+Avenue Monte Croce	06000
+Avenue Montfleury	06300
+Avenue Neuscheller	06000
+Avenue Nicolas II	06000
+Avenue Nicolas II prolongée	06000
+Avenue Notre-Dame	06000
+Avenue Nouvelle	06100
+Avenue Paderi	06200
+Avenue Panera	06100
+Avenue Patricia	06000
+Avenue Paul Arène	06000
+Avenue Paul Dufourmantel	06000
+Avenue Pauliani	06000
+Avenue Père Cartier	06000
+Avenue Père Marc-Aurèle	06100
+Avenue Philippe Adréani	06100
+Avenue Philippe Vissian	06100
+Avenue Piatti	06100
+Avenue Pierre de Coubertin	06200
+Avenue Pierre Emmanuel	06000
+Avenue Pierre Isnard	06200
+Avenue Pierre Loti	06000
+Avenue Pierre Navello	06300
+Avenue Pierrette	06300
+Avenue Plaisance	06100
+Avenue Primerose	06000
+Avenue Printemps	06200
+Avenue Professeur Henri Chretien	06300
+Avenue Raoul Dufy	06200
+Avenue Ratti	06000
+Avenue Raymond Comboul	06000
+Avenue Raymond Féraud	06200
+Avenue Reine Victoria	06100
+Avenue René Behaine	06000
+Avenue René Boylesve	06100
+Avenue René Couzinet	06200
+Avenue René-Maurice	06000
+Avenue Robert Malaval	06200
+Avenue Robert Schuman	06000
+Avenue Roi Albert 1er	06100
+Avenue Roi Robert	06100
+Avenue Romain Rolland	06100
+Avenue Rosa Bonheur	06200
+Avenue Rose France	06200
+Avenue Saint-Aignan	06300
+Avenue Saint-Antoine	06300
+Avenue Saint-Augustin	06200
+Avenue Saint-Barthélemy	06100
+Avenue Saint-Exupéry	06100
+Avenue Saint-Jacques	06200
+Avenue Saint-Jean-Baptiste	06000
+Avenue Saint-Joseph	06000
+Avenue Saint-Lambert	06100
+Avenue Saint-Maurice	06100
+Avenue Saint-Sébastien	06300
+Avenue Saint-Sylvestre	06100
+Avenue Sainte-Cécile	06300
+Avenue Sainte-Claire	06100
+Avenue Sainte-Colette	06100
+Avenue Sainte-Marguerite	06200
+Avenue Sainte-Philomène	06100
+Avenue Sainte-Thècle	06300
+Avenue Salonina	06000
+Avenue Santa-Fior	06100
+Avenue Santos - Dumont	06200
+Avenue Sauvan	06200
+Avenue Scudéri	06100
+Avenue Seilern	06100
+Avenue Séréna	06100
+Avenue Severina	06200
+Avenue Sévigné	06100
+Avenue Shakespeare	06000
+Avenue Simone Veil	06200
+Avenue Stephen Liégeard	06100
+Avenue Suzanne Lenglen	06000
+Avenue Symiane	06100
+Avenue Thérèse	06000
+Avenue Thiers	06000
+Avenue Tomatis Frères	06300
+Avenue Torre de Cimella	06000
+Avenue Urbain Bosio	06300
+Avenue Vaillant	06000
+Avenue Val Marie	06200
+Avenue Valdiletta	06100
+Avenue Valentiny	06100
+Avenue Valéry Giscard d'Estaing	06200
+Avenue Valrose	06100
+Avenue Vérani	06100
+Avenue Villermont	06000
+Avenue Vincent Arnaud	06300
+Avenue Virgile Neal	06100
+Avenue Vismara	06100
+Avenue Walkanaer	06100
+Avenue Warden	06200
+Avenue Yvonne Vittone	06200
+Boulevard Auguste Raynaud	06100
+Boulevard Bischoffsheim	06300
+Boulevard Carabacel	06000
+Boulevard Carlone	06200
+Boulevard Carnot	06300
+Boulevard Comte de Falicon	06100
+Boulevard de Cambrai	06200
+Boulevard de Cessole	06100
+Boulevard de Cimiez	06000
+Boulevard de l'Ariane	06300
+Boulevard de l'Armée des Alpes	06300
+Boulevard de l'Observatoire	06300
+Boulevard de la Madeleine	06200
+Boulevard de Las Planas	06100
+Boulevard de Magnan	06200
+Boulevard de Montréal	06200
+Boulevard de Riquier	06300
+Boulevard des Deux Corniches	06300
+Boulevard des Jardiniers	06200
+Boulevard du Mercantour	06200
+Boulevard du Mont Boron	06300
+Boulevard du Parc Impérial	06000
+Boulevard du Souvenir Français	06200
+Boulevard Dubouchage	06000
+Boulevard Edouard Herriot	06200
+Boulevard Edouard VII	06000
+Boulevard Franck Pilatte	06300
+Boulevard François Grosso	06000
+Boulevard Frédéric Sperling	06100
+Boulevard Gambetta	06000
+Boulevard Général Louis Delfino	06300
+Boulevard Gorbella	06100
+Boulevard Henri Sappia	06100
+Boulevard Imperatrice Eugenie	06200
+Boulevard Jacqueline Auriol	
+Boulevard Jean Behra	06100
+Boulevard Jean Jaurès	06300
+Boulevard Jean Luciano	06200
+Boulevard Jean-Baptiste Verany	06300
+Boulevard Joseph Garnier	06000
+Boulevard Lech Walesa	06300
+Boulevard Léon Morane	06200
+Boulevard Louis Braille	06300
+Boulevard Mantéga-Righi	06100
+Boulevard Maryse Bastie	06200
+Boulevard Maurice Maeterlinck	06300
+Boulevard Napoleon III	06200
+Boulevard Pape Jean XXIII	06300
+Boulevard Pasteur	06000
+Boulevard Paul Montel	06200
+Boulevard Paul Rémond	06100
+Boulevard Pierre Sémard	06300
+Boulevard Pierre Sola	06300
+Boulevard Prince de Galles	06000
+Boulevard Princesse Grace de Monaco	06300
+Boulevard Raimbaldi	06000
+Boulevard René Cassin	06200
+Boulevard Risso	06300
+Boulevard Saint-Roch	06300
+Boulevard Stalingrad	06300
+Boulevard Tzarewitch	06000
+Boulevard Victor Hugo	06000
+Boulevard Virgile Barel	06300
+Boulevard Winston Churchill	06300
+Cal de Spagnol Soubran	06200
+Cal de Spagnol Soutran	06200
+Calada Auguste Escoffier	06300
+Camin de l'Arieta	06200
+Camin de la Bléa	06200
+Camin dei Galofre	06000
+Camin Gino Niccolai	06100
+Camin Jean Bagnis	06200
+Camin Louis Bellone	06200
+Camin Louis Bellone : voie le prolongeant	06200
+Camin René Pietruschi	06100
+Chemin Adolphe Alziari	06100
+Chemin Alessandrini	06100
+Chemin Alexandra	06300
+Chemin André Pancioni	06200
+Chemin Antoine Braquet	06200
+Chemin Apraxine	06000
+Chemin au terrain de jeux route de l'Abadie	06300
+Chemin Auda	06200
+Chemin Bessi	06100
+Chemin Charles Roux	06300
+Chemin Chiapello	06000
+Chemin Clos Boulogne	06000
+Chemin Daniel	06100
+Chemin de Bellevue	06000
+Chemin de Bergiarde	06100
+Chemin de Calvi	06100
+Chemin de Canta Cigala	06200
+Chemin de Chateaurenard	06100
+Chemin de Crémat	06200
+Chemin de Golfan	06200
+Chemin de l'Abbaye de Saint-Pons	06100
+Chemin de l'Aco de Martin	06200
+Chemin de l'Amourie	06100
+Chemin de l'Archet	06200
+Chemin de l'Ecole de Lingostière	06200
+Chemin de l'Ecole Jules Verne	06200
+Chemin de l'Eglise de Saint-Pancrace	06100
+Chemin de l'Elysée	06200
+Chemin de l'Ibac	06200
+Chemin de l'Observatoire	06300
+Chemin de la Batterie de Rimiez	06100
+Chemin de la Batterie de Rimiez (antenne n°1)	06100
+Chemin de la Batterie de Rimiez (antenne n°2)	06100
+Chemin de la Batterie de Rimiez (antenne n°3)	06100
+Chemin de la Batterie Russe	06200
+Chemin de la Bauma	06000
+Chemin de la Bauma Fresca	06100
+Chemin de la Borne	06300
+Chemin de la Carrière Bistarelli	06100
+Chemin de la Cascade de Gairaut	06100
+Chemin de la Chapelle Saint-Charles	06300
+Chemin de la Chapelle Saint-Sauveur	06100
+Chemin de la Colle de Tarbon	06200
+Chemin de la Colline de Magnan	06000
+Chemin de la Conque	06000
+Chemin de la Costa Thérèse	06000
+Chemin de la Costière	06000
+Chemin de la Croix du Sénateur	06200
+Chemin de la Ferme Agnel	06200
+Chemin de la Ferme des trois Communes	06100
+Chemin de la Galère (tronçon n°2)	06100
+Chemin de la Galère (tronçon n°3)	06100
+Chemin de la Galère (tronçon n°4)	06100
+Chemin de la Gare de Lingostière	06200
+Chemin de la Ginestière	06200
+Chemin de la Glacière	06200
+Chemin de la Gruerie et du Piolet	06100
+Chemin de la Lauvette	06300
+Chemin de la Madonette de Terron	06200
+Chemin de la Maïoun Grossa	06100
+Chemin de la Paillos	06300
+Chemin de la Passerelle	06100
+Chemin de la Petite Abadie	06300
+Chemin de la Petite Source	06000
+Chemin de la Pinède	06100
+Chemin de la Pouncia	06200
+Chemin de la Raiola	06200
+Chemin de la Redoute	06100
+Chemin de la Révouta	06200
+Chemin de la Rosa Bianca	06100
+Chemin de la Séréna	06100
+Chemin de la Séréna Fleurie	06100
+Chemin de la Source	06000
+Chemin de la Tour de Bellet	06200
+Chemin de la Tour de Bellet à Magnan	06200
+Chemin de la Tour de Manda	06200
+Chemin de la Tramontane	06200
+Chemin de la Vallière	06000
+Chemin de la Vallière Inférieure	06100
+Chemin de la Vignette	06200
+Chemin de la Villa Noel	06000
+Chemin de Nice à Crémat	06200
+Chemin de Rosemont	06100
+Chemin de Saint-Philippe	06000
+Chemin de Saint-Roman	06200
+Chemin de Saquier	06200
+Chemin de Semente	06100
+Chemin de Terron	06200
+Chemin de Tiragallo	06200
+Chemin de Verre	06300
+Chemin des Ames	06200
+Chemin des Avelines	06200
+Chemin des Bassins de Rimiez	06100
+Chemin des Capans	06200
+Chemin des Cappan (antenne 1)	06200
+Chemin des Cappan (antenne 2)	06200
+Chemin des Carrières de Saint-Philippe	06000
+Chemin des Charretiers	06000
+Chemin des Chênes Blancs	06300
+Chemin des Cimetières Anglais et Russes	06200
+Chemin des Cistes	06300
+Chemin des Colettes	06200
+Chemin des Collinettes	06000
+Chemin des Crêtes de Féric	06100
+Chemin des Crêtes du Mont Boron	06300
+Chemin des Ecoles	06300
+Chemin des Fontainiers de Bellet	06200
+Chemin des Fusilles	06300
+Chemin des Giaïnes	06100
+Chemin des Grottes	06200
+Chemin des Jarres	06100
+Chemin des Lucioles	06200
+Chemin des Milfaysas	06300
+Chemin des Pins	06000
+Chemin des propriétés Chertier	06100
+Chemin des Sablières	06100
+Chemin des Serres	06200
+Chemin des Seules	06200
+Chemin des Tines	06100
+Chemin des Treuyes	06200
+Chemin des Treuyes inférieur	06000
+Chemin du Baron	06200
+Chemin du Barri	06100
+Chemin du Bois de Boulogne	06200
+Chemin du Cal du Mont Gros	06300
+Chemin du Canal CGE : Clua	06100
+Chemin du Canal CGE : Corniche des Oliviers	06000
+Chemin du Canal CGE : Gairaut-Rimiez	06100
+Chemin du Canal CGE : Pessicart	06100
+Chemin du Canal CGE : Saint-Pancrace	06100
+Chemin du Canal CGE : Sainte-Thècle (Partie basse)	06300
+Chemin du Canal CGE : Sainte-Thècle (Partie haute)	06300
+Chemin du Canal des Arrosants	06300
+Chemin du Candéu	06200
+Chemin du Castel Gilberte	06200
+Chemin du Cayre	06300
+Chemin du Château de la Ginestière	06200
+Chemin du Château Saint-Pierre	06300
+Chemin du Cimetière de Saint-Roman	06200
+Chemin du Collet de Basso	06200
+Chemin du Collet de Bellon	06200
+Chemin du Collet de Grisella	06200
+Chemin du Collet de la Tour	06200
+Chemin du Collet de Saint-Roman	06200
+Chemin du Collet des Etoiles	06200
+Chemin du Collet des Fourniers	06200
+Chemin du Collet des Grecs	06200
+Chemin du Collet Sauvaigo	06200
+Chemin du Contéo	06300
+Chemin du Domaine de la Bauma	06100
+Chemin du Fort du Mont Alban	06300
+Chemin du Fort Thaon	06300
+Chemin du Fuont des Iscles	06200
+Chemin du Génie	06200
+Chemin du Grand Bois	06200
+Chemin du Hameau de la Petite Abadie	06300
+Chemin du Hameau du Serre	06300
+Chemin du Haut Magnan	06000
+Chemin du Lamparo	06200
+Chemin du Malgarach	06300
+Chemin du Mascon	06200
+Chemin du Mont des Mignons	06300
+Chemin du Mont Gros	06300
+Chemin du Mont Gros les Chênes	06300
+Chemin du Mont Leuze	06300
+Chemin du Moulin de Rimiez	06100
+Chemin du Moulin du Vallon de Magnan	06100
+Chemin du Parc Liserb Inférieur	06100
+Chemin du Parc Maria	06100
+Chemin du Pas du Pommier	06100
+Chemin du Petit Pessicart	06100
+Chemin du Pilon	06200
+Chemin du Reservoir de la Pastorelle	06200
+Chemin du Scaillon	06300
+Chemin du Temple	06100
+Chemin du Torteo	06100
+Chemin du Tripode de la Costière	06000
+Chemin du Vallon	06000
+Chemin du Vallon Barla	06200
+Chemin du Vallon de l'Ariane	06300
+Chemin du Vallon de la Lanterne	06200
+Chemin du Vallon de Lingostière	06200
+Chemin du Vallon de Terron	06200
+Chemin du Vallon des Arboras	06200
+Chemin du Vallon du Collet de Roustan	06200
+Chemin du Vallon du Petit Paradis	06100
+Chemin du Vallon Gorbellon	06100
+Chemin du Vallon Malgaraccio	06300
+Chemin du Vallon Monari	06200
+Chemin du Vallon Sabatier	06000
+Chemin du Vieux Faune	06200
+Chemin du Vinaigrier	06300
+Chemin Ferdinand Garino	06100
+Chemin Frédéric Mistral	06100
+Chemin Jean Capan	06200
+Chemin Jean Monge	06200
+Chemin Jean-Baptiste Conti	06100
+Chemin Monta Cala	06100
+Chemin Muletier de Gorbella à Saint-Pancrace	06100
+Chemin Napoléon	06300
+Chemin Saint-Charles	06000
+Chemin Saint-Vincent	06000
+Chemin Saint-Yriel	06000
+Chemin Sorgentino	06300
+Chemin Tordu du Mont Boron	06300
+Contre Allée Nikaia	06200
+Corniche André de Joly	06300
+Corniche Bellevue	06000
+Corniche de Magnan	06000
+Corniche des Oliviers	06100
+Corniche Fleurie	06200
+Corniche Frère Marc	06000
+Corniche Paul Clermont	06100
+Corniche Sainte-Rosalie	06000
+Cour Bensa	06000
+Cours Jacques Chirac	06300
+Cours Saleya	06300
+Descente Crotti	06300
+Descente du Marché	06300
+Escalier Allée Maeterlinck	06300
+Escalier Ansaldi - Bellet	06200
+Escalier au n°2 avenue Claude Gimelle	06100
+Escalier avenue Bieckert - avenue du Bois	06000
+Escalier Avenue Buenos Ayres Rue du Rocher	06000
+Escalier Avenue de Béarn - Impasse de Savoie	06000
+Escalier Avenue de l'Arbre Inférieur - Avenue Jean Richepin	06000
+Escalier Avenue de la Réserve - Avenue Saint-Aignan	06300
+Escalier Avenue de Rimiez - Avenue Auguste Duplay	06100
+Escalier Avenue Delphine - Chemin du Vallon du Petit Paradis	06100
+Escalier Avenue des Arènes de Cimiez - Avenue Pauliani	06000
+Escalier Avenue des Genêts - Boulevard Las Planas	06100
+Escalier Avenue des Platanes prolongée - Route de Pessicart	06100
+Escalier Avenue du Caroubier-Chemin du Cal du Mt Gros	06300
+Escalier Avenue du Dauphiné - Avenue Primerose	06000
+Escalier Avenue Ernestine-Route Forestière du Mont Boron	06300
+Escalier Avenue Julien - Chemin de la Passerelle	06100
+Escalier Avenue Marius Raveu - Avenue Paderi	06200
+Escalier Avenue Pierre Loti - Avenue de Savoie	06000
+Escalier Avenue Pierre Loti - Avenue Jean Richepin	06000
+Escalier Avenue Pierre Loti - Montée des Deux Ponts	06000
+Escalier Avenue Saint-Barthélemy - Avenue Léo Imbert	06100
+Escalier Avenue Stephen Liegeard - Chemin Frédéric Mistral	06100
+Escalier Avenue Stephen Liegeard - Rue Victorien Sardou - Rue Charles Calais	06100
+Escalier Avenue Thiers/Rue de Belgique	06000
+Escalier Avenue Val Marie - Avenue du Rond-Point	06200
+Escalier Avenue Val Marie - Avenue Val Marie	06200
+Escalier Besset-Virenque	06100
+Escalier Boulevard Bischoffsheim-Avenue du Caroubier	06300
+Escalier Boulevard de Cimiez - Avenue Desambrois	06000
+Escalier Boulevard de Cimiez - Rue d'Urfé	06000
+Escalier Boulevard Henri Sappia - Boulevard Henri Sappia	06100
+Escalier boulevard Henri Sappia - Résidences Batéco/Rouret	06100
+Escalier Boulevard Jean Jaurès - Descente Crotti n°1	06300
+Escalier Boulevard Jean Jaurès - Descente Crotti n°2	06300
+Escalier Boulevard Jean Jaurès Calada Auguste Escoffier	06300
+Escalier Boulevard Jean Jaurès Rue Centrale	06300
+Escalier Boulevard Napoléon III - Avenue des Magnolias	06200
+Escalier Boulevard Pasteur - Voie Romaine	06000
+Escalier Caravadossi	06000
+Escalier Charpentier-Cyrnos	06100
+Escalier Chemin des Crêtes du Mont Boron	06300
+Escalier Commandant Guilbaud	06100
+Escalier Cyrnos	06100
+Escalier de Gairaut	06100
+Escalier de l'Ancien Chemin de l'Abadie	06300
+Escalier de la Gare de Saint-Isidore	06200
+Escalier de la Porte Fausse	06300
+Escalier Dominique Truqui	06300
+Escalier Dr Fighiéra-d'Abray	06300
+Escalier du Domaine du Piol	06000
+Escalier du Monastère de Cimiez	06000
+Escalier du Pin	06000
+Escalier du Super Righi	06100
+Escalier Edouard Grinda	06300
+Escalier et allées Tomatis Frères	06300
+Escalier Francine	06100
+Escalier François-Louis Cappatti	06100
+Escalier Giacobi	06300
+Escalier Impasse des Liserons	06300
+Escalier J - O Gautier	06300
+Escalier Jules Eynaudi	06300
+Escalier liaison avenue de la Forêt Avenue Cyrille Besset au n°115	06100
+Escalier liaison avenue Yvonne Vittone - Rue Saïda	06200
+Escalier liaison Boulevard des Deux Corniches - Avenue Castel	06300
+Escalier Lunel - Infernet	06300
+Escalier Milon de Veraillon - Canta	06300
+Escalier Montée Clément - Résidences les Terrasses de Cimiez	06000
+Escalier Moscovite	06100
+Escalier Nerault	06100
+Escalier Olivetto - Biasini	06000
+Escalier Olivetto - George V	06000
+Escalier Olivetto - Ménard	06000
+Escalier Pape Jean XXIII	06300
+Escalier Perrichon	06100
+Escalier Philippe Adréani	06100
+Escalier Pierre Suche	06300
+Escalier Pilatte - Poudrière	06300
+Escalier Pilatte - Réserve	06300
+Escalier Quai d'Entrecasteaux - Boulevard Stalingrad	06300
+Escalier Raccourci des Arènes de Cimiez n°1	06000
+Escalier Raccourci des Arènes de Cimiez n°2	06000
+Escalier Raymond Barbier	06100
+Escalier reliant Avenue Milon de Véraillon - Avenue du Teiras	06300
+Escalier reliant Boulevard du Parc Impérial - Impasse René-Maurice	06000
+Escalier reliant le Chemin du Mont Gros - Avenue du Teiras	06300
+Escalier reliant les n°33 et 57 du Boulevard de Las Planas	06100
+Escalier reliant les n°54 et 72 de l'Avenue Milon de Veraillon	06300
+Escalier reliant les n°58 et 72 du Boulevard de Las Planas	06100
+Escalier reliant les n°7 et 37 de l'Avenue Germaine	06300
+Escalier Route de Saint-Pancrace/Chemin de l'Eglise de Saint-Pancrace	06100
+Escalier Route de Saint-Pierre de Féric - Avenue du Dauphiné	06000
+Escalier Rue El Nouzah - Rue El Nouzah	06000
+Escalier Rue Fodéré - Impasse Victor Lavagna	06300
+Escalier Saint-Charles	06000
+Escalier Saint-Exupéry	06100
+Espace Bernadette Chirac	06100
+Espace Charles et Lucie Morlino	06300
+Espace Cheret	06000
+Espace Cousin Bibi	06000
+Espace et Allée Marcel Carne	06200
+Espace et Jardin Sébastien Giaume	06300
+Espace Fernande Bataille	06100
+Espace Hélène Fabris	06200
+Espace Jacques Cotta	06000
+Espace Jacques Médecin	06000
+Espace Jean Sassone	06100
+Espace Joseph Manzone	06000
+Espace Maitre Joseph Marro	06300
+Espace Martine Doytier	06100
+Espace Père Ambroise Steve	06000
+Espace Roger Seassal	06300
+Espace Shimon Peres	06300
+Esplanade de Magnan	06000
+Esplanade des Victoires	06000
+Esplanade Francis Giordan	06300
+Esplanade Georges Pompidou	06300
+Esplanade Maréchal de Lattre de Tassigny	06300
+Esplanade Pape François	06000
+Esplanade Président John Fitzgerald Kennedy	06000
+Impasse Achille	06300
+Impasse Alfred de Vigny	06100
+Impasse Amaro	06200
+Impasse Anahit	06200
+Impasse Antoine Veran	06100
+Impasse Augusta	06100
+Impasse Bonifassi	06000
+Impasse Bonne Semence	06100
+Impasse Candia	06000
+Impasse Castan	06000
+Impasse César Castelli	06000
+Impasse Chimère	06000
+Impasse Clotilde	06100
+Impasse Cognet	06000
+Impasse Commandant Bossut	06000
+Impasse Dalmas	06100
+Impasse de Cessole	06100
+Impasse de l'Assomption	06100
+Impasse de l'Obélisque	06300
+Impasse de la Douane	06300
+Impasse de la Forêt	06100
+Impasse de la Gaieté	06200
+Impasse de la Lauvette	06300
+Impasse de la Marine	06300
+Impasse de la Pinède	06100
+Impasse de la Villette	06000
+Impasse de Savoie	06000
+Impasse Delphine	06100
+Impasse des Deux Cypres	06200
+Impasse des Fauvettes	06100
+Impasse des Iscles	06200
+Impasse des Liserons	06300
+Impasse des Noisetiers	06100
+Impasse des Orchidées	06100
+Impasse des Prisons	06300
+Impasse dite Avenue des Templiers	06100
+Impasse Docteur Maria Rivoire-Vigon	06200
+Impasse du Chemin du Temple	06100
+Impasse du Palladium	06000
+Impasse du Petit Fabron	06200
+Impasse du Poivriers	06300
+Impasse du Souvenir	06300
+Impasse du Square Magnan	06200
+Impasse du Vieux Puits	06200
+Impasse du Zodiaque	06000
+Impasse Eden Park	06100
+Impasse El Nouzah	06000
+Impasse Escoffier	06300
+Impasse Eugene Bérenger	06100
+Impasse Fabre	06100
+Impasse Ferrand	06100
+Impasse Flores n°1	06000
+Impasse Flores n°2	06000
+Impasse Frédéric Sperling	06100
+Impasse Gardon	06000
+Impasse Grégoire	06000
+Impasse Guidotti	06300
+Impasse Guillot	06100
+Impasse Henry de Cessole	06100
+Impasse Jeanne d'Arc	06100
+Impasse Jeanne Marlin	06300
+Impasse Joseph Canta	06300
+Impasse La Bruyère	06000
+Impasse Laurenti	06100
+Impasse les Cèdres	06000
+Impasse Les Néréides	06000
+Impasse Longchamp	06000
+Impasse Lorenzi	06100
+Impasse Lucien Gastaud	06200
+Impasse Malatray	06000
+Impasse Marengo	06000
+Impasse Miette	06100
+Impasse Milon de Véraillon	06300
+Impasse Miramar	06300
+Impasse Mirasol Inférieure	06100
+Impasse Mirasol Supérieure	06100
+Impasse Neptune	06200
+Impasse Parmentier	06100
+Impasse Passeron	06100
+Impasse Passeroni	06300
+Impasse Régina	06000
+Impasse René-Maurice	06000
+Impasse Saint Hubert	06100
+Impasse Saint-Eloi	06000
+Impasse Saint-Laurent	06000
+Impasse Saint-Martin	06200
+Impasse Séréna	06100
+Impasse Sévigné	06100
+Impasse Talon	06000
+Impasse Trachel	06000
+Impasse Victor Lavagna	06300
+Impasse Vismara	06100
+Impasse Voie Romaine	06000
+Jardin Adeline Bailet	06100
+Jardin Adolphe Lions	06000
+Jardin Albert 1er	06300
+Jardin Alsace Lorraine	06000
+Jardin Avenue Auguste Verola	06200
+Jardin Avenue des Arènes de Cimiez - Rue El Nouzah	06000
+Jardin Avenue Doyen Jean Lépine	06100
+Jardin Bachaga Boualem	06300
+Jardin Bd Ariane Ave Emile Ripert	06300
+Jardin Bellanda	06000
+Jardin Boulevard de la Madeleine	06000
+Jardin Boulevard Henri Sappia	06100
+Jardin Cardinal Clément Ferréro	06000
+Jardin Cessole - CGE	06100
+Jardin Charles Caressa	06300
+Jardin Charles Dalmas	06000
+Jardin Comte de Falicon	06100
+Jardin de Cessole	06100
+Jardin de l'Arménie	06000
+Jardin de l'Observatoire	06300
+Jardin de la Batterie du Cimetière Russe	06200
+Jardin de la Légion d'Honneur	06000
+Jardin de la Rue de la Gendarmerie	06000
+Jardin des Fusillés de Saint-Julien du Verdon	06200
+Jardin des Moulins	06200
+Jardin Docteur Ange-Denis Ronchèse	06000
+Jardin du Bois de Boulogne	06200
+Jardin du Boulevard de Montréal	06200
+Jardin du Monastère	06000
+Jardin Emile Delpierre	06000
+Jardin Emilie Jotte-Latouche	06000
+Jardin Emmanuel Signoret	06100
+Jardin Eric Goffin	06100
+Jardin et Parc-autos Corvésy	06300
+Jardin Felix Rainaud	06300
+Jardin Fernand Moretti	06200
+Jardin Général Thiole	06000
+Jardin Hector Cendo	06200
+Jardin Henri Lentulo	06000
+Jardin Henri Magrini	06000
+Jardin Jacques Fella	06200
+Jardin Jacques Ibert	06000
+Jardin Jean Gilletta	06300
+Jardin Jean Lippmann	06000
+Jardin Jean Moréno	06000
+Jardin Jean Panizzoli	06100
+Jardin Joseph Kessel	06000
+Jardin Joseph Pisano	06300
+Jardin Jules Massiéra	06200
+Jardin Léon Teisseire	06000
+Jardin Lou Jardin de Guste	06200
+Jardin Louis Pin	06000
+Jardin Maréchal Juin	06300
+Jardin Maurice Mouchan	06100
+Jardin Nelson Mandela	06300
+Jardin Paul Scoffier	06200
+Jardin Père Jean Ferré	06100
+Jardin Philippe Giovannini	06300
+Jardin Rue Auguste Pégurier	06200
+Jardin Rue des Gendarmes d'Ouvéa	06200
+Jardin Rue des Potiers - Rue Dante	06000
+Jardin Rue El Nouzah	06000
+Jardin Rue Genari - Boulevard Braille	06300
+Jardin Rue Jean-Henri Fabre	06100
+Jardin Ruelle de la Cité de l'Eau Fraîche	06000
+Jardin Sainte-Marguerite	06200
+Jardin Théodore de Banville	06300
+Jardin Vallon des Fleurs	06100
+Jardin William et Catherine Booth	06100
+Liaison Route de Pessicart n°222/Route de Pessicart n°268	06100
+Lotissement Clos de la Ginestière	06200
+Montée Auguste Charles Kerl	06300
+Montée Barelli	06000
+Montée Carabacel	06000
+Montée Claire Virenque	06100
+Montée Claude Nougaro	06000
+Montée Clément	06000
+Montée Commandant Octobon	06300
+Montée d'Abray	06300
+Montée de Cimiez	06000
+Montée de l'Abbaye de Saint-Pons	06000
+Montée de l'Evéché	06100
+Montée de l'Hermitage	06000
+Montée des Cigales	06100
+Montée des Deux Ponts	06000
+Montée des Violettes	06000
+Montée Desambrois	06000
+Montée du Grand Palais	06000
+Montée Eberlé	06300
+Montée Gurnée	06300
+Montée Joseph Maurizi	06000
+Montée Lesage	06300
+Montée Mengola	06300
+Montée Menica Rondelly	06300
+Montée Monseigneur Léon Repetto	06300
+Montée Montfort	06300
+Montée Saint-Aignan	06300
+Montée Saint-Valérien	06000
+Parc Carol de Roumanie	06200
+Parc Castel des Deux Rois	06300
+Parc Christian Lescos	06300
+Parc Corniche Fleurie	06200
+Parc de l'Indochine	06200
+Parc de la Villa des Arènes de Cimiez	06000
+Parc Docteur Jean Guillaud	06100
+Parc du Château	06300
+Parc Général Lecuyer	06300
+Parc Paysager du Dauphiné	06000
+Parc Phoenix	06200
+Parc Vigier	06300
+Parvis Abbé Merlin	06200
+Parvis de l'Europe	06000
+Parvis des Mosaïques	06300
+Parvis Doyen René Jean Dupuis	06000
+Parvis du Père Christian Chessel	06300
+Parvis Louis Aragon	06300
+Parvis Lucie et Raymond Aubrac	06000
+Parvis Monseigneur Bernard Barsi	06000
+Passage André Macari	06300
+Passage Antoine Véran	06100
+Passage Avenue du Parc Robiony - Avenue Laurent	06200
+Passage Barberis	06300
+Passage Bellon	06100
+Passage Bonnaud	06000
+Passage Boulevard Carnot - Boulevard du Mont Boron	06300
+Passage Boulevard René Cassin - Rue Auguste Pégurier	06200
+Passage Caldera	06000
+Passage Catherine Ségurane	06300
+Passage Charles Gottlieb	06000
+Passage Cognet	06000
+Passage Cyrille Besset - Jean Canavèse	06100
+Passage de Buenos Ayres	06000
+Passage de l'Avenir	06000
+Passage de la Caravelle	06200
+Passage de la Tranquillité	06300
+Passage des Avitailleurs	06200
+Passage des Feuillantines	06000
+Passage des Lilas	06000
+Passage des Oudaias	06200
+Passage des Prés	06000
+Passage des Violettes	06000
+Passage du Fret	06200
+Passage du Petit Fabron	06200
+Passage du Petit Parc	06000
+Passage du Temple Vaudois	06000
+Passage Emile Négrin	06000
+Passage Flores	06000
+Passage Gastaud	06100
+Passage Gola	06000
+Passage Granier	06200
+Passage Grégoire	06000
+Passage Hélène Barale	06300
+Passage Jérome Balensi	06300
+Passage Longchamp	06000
+Passage Louis Cochois	06000
+Passage Louis Gassin	06300
+Passage Malausséna	06000
+Passage Martin	06000
+Passage Masséna	06000
+Passage Max Vérola	06000
+Passage Meynell	06000
+Passage Nice - Europe	06000
+Passage Occelli	06300
+Passage Parmentier	06100
+Passage Rastelli	06300
+Passage reliant le n°44 de l'Avenue Philippe Adréani au Chemin du Vallon Gorbellon	06100
+Passage Revelli	06000
+Passage Rosset	06100
+Passage Rue Contesso - Chemin de la Maioun Grossa	06100
+Passage Rue Gutenberg - Rue Dabray	06000
+Passage Rue Maréchal Joffre Rue de la Buffa	06000
+Passage Rue Miollis Rue des Combattants en Afrique du Nord	06000
+Passage Santagnes	06100
+Passage Victor Hugo	06000
+Passerelle Ernest Hildesheimer	06200
+Passerelle Paul Durand-Cazelles	06300
+Petit Chemin de Valrose	06100
+Petite Avenue de Buenos Ayres	06000
+Petite Avenue de la Californie	06200
+Petite Avenue des Orangers	06100
+Petite Avenue du Patrimoine	06100
+Petite Avenue Felicité Savona	06200
+Petite Avenue Joliette	06100
+Petite Avenue Madeleine	06000
+Petite Avenue Prince de Galles	06000
+Petite Avenue René Bouteilly	06000
+Place Abbé Egide Martelli	06300
+Place Abbé Marcel Isnardi	06300
+Place Alain Margaria	06200
+Place Alexandre Blanchi (Madeleine)	06000
+Place Alexandre Médecin	06100
+Place Alziary de Malausséna	06000
+Place Arson	06300
+Place Auguste Blanqui	06300
+Place Centrale	06300
+Place Chanoine César Musso	06200
+Place Charles Félix	06300
+Place Commandant Marcel Gérome	06100
+Place Croix de Marbre	06000
+Place de Caucade	06200
+Place de l'Ancien Sénat	06300
+Place de l'Armée du Rhin	06300
+Place de l'Eglise de l'Ariane	06300
+Place de l'Eglise de la Madeleine	06000
+Place de l'Eglise de Saint-Pancrace	06100
+Place de l'Ile de Beauté	06300
+Place de la Brigue	06300
+Place de la Gare du Sud	06000
+Place de la Halle aux Herbes	06300
+Place de la Lanterne	06200
+Place des Amaryllis	06200
+Place des Cigalusa	06300
+Place des Mosaiques	06200
+Place des Vignerons de Bellet	06200
+Place Docteur Charles Paschetta	06000
+Place Dominique Fighiera	06200
+Place Don Bosco	06000
+Place du 8 Mai 1945	06300
+Place du Carret	06300
+Place du Cimetière de l'Est	06300
+Place du Cimetière de Saint-Roman	06200
+Place du Jésus	06300
+Place du Mont Boron	06300
+Place du Palais	06300
+Place du Palio	06300
+Place du Pin	06300
+Place Emile Hugues	06000
+Place Emile Marcel Begnis	06100
+Place Escadrille Normandie - Niemen	06300
+Place Eugène Mo	06000
+Place Flo Bravi	06200
+Place Fontaine du Temple	06100
+Place Francis Lai	06000
+Place Franklin	06000
+Place Galaxie	06200
+Place Garibaldi	06300
+Place Général Charles de Gaulle	06000
+Place Général Goiran	06100
+Place Général Marshall	06000
+Place Grimaldi	06000
+Place Guynemer	06300
+Place Jean Baptiste Malausséna	06100
+Place Jean Moulin	06000
+Place José Balarello	06300
+Place Joseph Kessel	06000
+Place Laurent Révélat	06200
+Place Lieutenant Henri Chemin	06300
+Place Louis Martin	06200
+Place Magenta	06000
+Place Maryse Condé	06200
+Place Masséna	06000
+Place Max Amouroux	06000
+Place Max Barel	06300
+Place Mozart	06000
+Place Pape Jean-Paul II	06000
+Place Pellegrini	06300
+Place Philippe Randon	06000
+Place Pierre Gautier	06300
+Place Rossetti	06300
+Place rue Maurice Maccario	06000
+Place Saetone	06000
+Place Saint-Augustin	06300
+Place Saint-François	06300
+Place Saint-Philippe	06000
+Place Saint-Roch	06300
+Place Sainte-Claire	06300
+Place Sainte-Marguerite	06200
+Place Sasserno	06000
+Place Sylvain Mars	06300
+Place Thomas Jefferson	06300
+Place Toselli	06000
+Place Victor Bozzi	06200
+Place Vieille	06300
+Place Vittone	06200
+Place Wilson	06000
+Place Yves Klein	06000
+Placette abbé Merlin	06200
+Placette Abbé Perdigon	06200
+Placette Abbé Robert Jarre	06300
+Placette Augustin Révélat et Victor Vincent Révélat	06200
+Placette de l'Industrie	06300
+Placette Gilbert Bécaud	06100
+Placette Yanis Coviaux	06200
+Pont Anatole France	06300
+Pont de la Liberté	06300
+Pont de la Première Division Française Libre	06300
+Pont de la Tour	06200
+Pont Garigliano Lion	06100
+Pont Garigliano Tigre	06300
+Pont Michel	06300
+Pont Napoléon III	06200
+Pont René Coty	06300
+Pont Vincent Auriol	06000
+Promenade des Anglais	06000
+Promenade des Arts	06300
+Promenade Général Edouard Corniglion-Molinier	06200
+Promenade Raoul Bosio	06300
+Quai Amiral Infernet	06300
+Quai Amiral Riboty	06300
+Quai d'Entrecasteaux	06300
+Quai de l'Ile de Beauté	06300
+Quai de la Douane	06300
+Quai des Caboteurs	06300
+Quai des Deux Emmanuel	06300
+Quai des Docks	06300
+Quai des Etats-Unis	06300
+Quai du Commerce	06300
+Quai Lunel	06300
+Quai Napoléon 1er	06300
+Quai Papacino	06300
+Quai Rauba Capeu	06300
+Raccourci Auguste Conte n°1	06200
+Raccourci Auguste Conte n°2	06200
+Raccourci Auguste Conte n°3	06200
+Raccourci Auguste Conte n°4	06200
+Raccourci Avenue Capitaine Scott	06300
+Raccourci Avenue de la Lanterne	06200
+Raccourci Avenue Gravier	06100
+Raccourci Croix de Berra	06200
+Raccourci de Capiana Li Plana	06100
+Raccourci de l'avenue Henry Dunant	06100
+Raccourci de l'Eglise de Gairaut	06100
+Raccourci de la Corniche de Magnan	06000
+Raccourci de la Croix	06100
+Raccourci des Baumettes	06000
+Raccourci des Chênes	06100
+Raccourci du Chemin de l'Eglise de la Madeleine	06000
+Raccourci du Cimetière de l'Est	06300
+Raccourci du Col de Villefranche	06300
+Raccourci du Mont Boron	06300
+Raccourci du Pilon	06200
+Raccourci du Vinaigrier	06300
+Raccourci Louis Garneray	06300
+Raccourci Tiraverdi	06100
+Rond Point Auguste Maicon	06200
+Rond Point d'Ostende	06000
+Rond Point de l'Aéropostale	06200
+Rond Point du Voyageur	06200
+Rond Point la porte des Alpes-Maritimes	06200
+Rond Point Laurent Luquet	06100
+Rond Point Mercantour - Vérola	06200
+Route d'Aspremont	06100
+Route de Bellet	06200
+Route de Canta Galet	06200
+Route de Colomars	06200
+Route de l'Abadie	06300
+Route de l'Aire Saint-Michel	06100
+Route de la Lanterne des morts	06300
+Route de la Lauvette	06300
+Route de la Sirole	06100
+Route de la Source	06300
+Route de Pessicart	06100
+Route de Saint-Antoine	06200
+Route de Saint-Pancrace	06100
+Route de Saint-Pierre de Féric	06000
+Route de Turin	06300
+Route des Combes	06200
+Route des Pins	06300
+Route du Bois sacré	06300
+Route du Cimetière de l'Est	06300
+Route du Fort du Mont Alban	06300
+Route du Mas Duc	06300
+Route du Sanctuaire	06300
+Route du Saut de Millo	06300
+Route du Vallon de la Lauvette	06300
+Route Forestière du Mont Boron	06300
+Route Métropolitaine 6202bis - Nice/Carros	06200
+Route Porte nord	06300
+Rue Abbé Augustin d'Andréis	06200
+Rue Abbé Grégoire	06000
+Rue Abbé Salvetti	06300
+Rue Acchiardi de Saint-Léger	06300
+Rue Adolphe de Rothschild	06000
+Rue Aimé Barelli	06300
+Rue Alain Mimoun	06200
+Rue Albert Voisin	06300
+Rue Alberti	06000
+Rue Alexandre Dumas	06100
+Rue Alexandre Mari	06300
+Rue Alexis Mossa	06000
+Rue Alfred Binet	06000
+Rue Alfred Mortier	06000
+Rue Alphonse 1er	06200
+Rue Alphonse Daudet	06100
+Rue Alphonse Karr	06000
+Rue Amédée VII	06300
+Rue Amiral de Grasse	06000
+Rue Anatole de Monzie	06300
+Rue André Guinard	06300
+Rue André Poullan	06000
+Rue André Theuriet	06100
+Rue André Theuriet prolongée	06100
+Rue Andrioli	06000
+Rue Antoine Biguet	06100
+Rue Antoine Gautier	06300
+Rue Antoine Virello	06000
+Rue Anton Tchekhov	06000
+Rue Antonio Fernandez	06000
+Rue Aristide Briand	06100
+Rue Arson	06300
+Rue Arthur Richardson	06300
+Rue Assalit	06000
+Rue Aubry-Lecomte	06200
+Rue Auguste Bercy	06100
+Rue Auguste Gal	06300
+Rue Auguste Maicon	06200
+Rue Auguste Pégurier	06200
+Rue Auguste Renoir	06000
+Rue Aurore	06000
+Rue Badat	06300
+Rue Balatchano	06300
+Rue Baleison	06100
+Rue Balzac	06000
+Rue Barberis	06300
+Rue Barillerie	06300
+Rue Barla	06300
+Rue Barralis	06000
+Rue Battisti	06300
+Rue Bavastro	06300
+Rue Beau Site	06000
+Rue Beaumont	06300
+Rue Beautruch	06300
+Rue Beethoven	06000
+Rue Benoît Aonzo	06200
+Rue Benoit Bunico	06300
+Rue Berlioz	06000
+Rue Berthe Morisot	06200
+Rue Bertola	06300
+Rue Biscarra	06000
+Rue Blacas	06000
+Rue Blasco-Ibanez	06100
+Rue Boissy d'Anglas	06000
+Rue Bonaparte	06300
+Rue Bottéro	06000
+Rue Boyer	06300
+Rue Bréa	06300
+Rue Caffarelli	06000
+Rue Cais de Gilette	06300
+Rue Cais de Pierlas	06300
+Rue Caissotti	06300
+Rue Caroline	06100
+Rue Cassini	06300
+Rue Castel	06000
+Rue Catherine Ségurane	06300
+Rue Cathy Richeux	06300
+Rue Cavendish	06100
+Rue Centrale	06300
+Rue Chabrier	06300
+Rue Chanoine Albin	06300
+Rue Chanoine Rance-Bourrey	06100
+Rue Charles Baudelaire	06100
+Rue Charles Baudelaire Privée	06100
+Rue Charles Calais	06100
+Rue Charles Chauve	06200
+Rue Charles de Foucauld	06100
+Rue Charles Péguy	06100
+Rue Charles-François Fénoglio de Briga	06300
+Rue Chauvain	06000
+Rue Chevaliers de Malte	06100
+Rue Claude Arabo	06200
+Rue Claude Bernard	06000
+Rue Claude Bounin	06100
+Rue Claude Kogan	06200
+Rue Claudia	06000
+Rue Clément Roassal	06000
+Rue Cluvier	06000
+Rue Colette Pons-Dreyfus	06200
+Rue Colonel Driant	06100
+Rue Colonel Gassin	06000
+Rue Colonel Guide	06300
+Rue Colonel Musso	06000
+Rue Colonna d'Istria	06300
+Rue Commandant Berretta	06000
+Rue Constantin Bergondi	06000
+Rue Contesso	06100
+Rue Costes et Bellonte	06200
+Rue Cronstadt	06000
+Rue Cros de Capeu	06100
+Rue Curie	06000
+Rue d'Alger	06000
+Rue d'Alicante	06300
+Rue d'Alsace Lorraine	06000
+Rue d'Angleterre	06000
+Rue d'Ararat	06000
+Rue d'Armenie	06000
+Rue d'Autun	06000
+Rue d'Auzac	06000
+Rue d'Erevan	06000
+Rue d'Italie	06000
+Rue d'Urfé	06000
+Rue d'Utelle	06300
+Rue Dabray	06000
+Rue Dalpozzo	06000
+Rue Dante	06000
+Rue de Belgique	06000
+Rue de Bilbao	06000
+Rue de Candia	06000
+Rue de Chateauneuf	06000
+Rue de Dijon	06000
+Rue de Fontan	06300
+Rue de Foresta	06300
+Rue de France	06000
+Rue de Gilette	06300
+Rue de Grammont	06100
+Rue de Java	06300
+Rue de Jussieu	06000
+Rue de Jussieu prolongée	06000
+Rue de l'Abbaye	06300
+Rue de l'ancien Moulin (Madeleine)	06000
+Rue de l'Armée d'Orient	06300
+Rue de l'Authion	06300
+Rue de l'Hôtel de Ville	06300
+Rue de l'Hôtel des Postes	06000
+Rue de l'Industrie	06300
+Rue de l'Orme	06100
+Rue de la Boucherie	06300
+Rue de la Buffa	06000
+Rue de la Cité de l'Eau Fraîche	06000
+Rue de la Condamine	06300
+Rue de la Corderie	06200
+Rue de la Croix	06300
+Rue de la Gare du Sud	06000
+Rue de la Gendarmerie	06000
+Rue de la Liberté	06000
+Rue de la Loge	06300
+Rue de la Malonnière	06300
+Rue de la Mantéga	06100
+Rue de la Plaine de Cimiez	06000
+Rue de la Poissonnerie	06300
+Rue de la Préfecture	06300
+Rue de la Providence	06300
+Rue de la Santoline	06200
+Rue de la Suisse	06000
+Rue de la Tour	06300
+Rue de la Tour de l'Ariane	06300
+Rue de la Tour de Magnan	06000
+Rue de la Villette	06000
+Rue de Lépante	06000
+Rue de Maeyer	06300
+Rue de Massingy	06000
+Rue de Montségur	06100
+Rue de Nathanya	06300
+Rue de Orestis	06300
+Rue de Paris	06000
+Rue de Rivoli	06000
+Rue de Roquebillière	06300
+Rue de Roussillon	06300
+Rue de Russie	06000
+Rue de Saorge	06300
+Rue de Sospel	06300
+Rue de Sumatra	06300
+Rue de Villeneuve	06000
+Rue Defly	06000
+Rue Delille	06000
+Rue Delrieu	06100
+Rue Demontzey	06300
+Rue des Amis	06100
+Rue des Antilles	06100
+Rue des Barbets	06300
+Rue des Bastions	06300
+Rue des Boers	06100
+Rue des Castors de la Grande Corniche	06300
+Rue des Combattants en Afrique du Nord	06000
+Rue des Coteaux	06300
+Rue des Eglantines	06300
+Rue des Epis	06000
+Rue des Etoiles	06000
+Rue des Gendarmes d'Ouvéa	06200
+Rue des Glacières	06100
+Rue des Grenouillères	06200
+Rue des Jasmins	06000
+Rue des Lilas	06100
+Rue des Oeillets	06000
+Rue des Orangers	06300
+Rue des Poilus	06100
+Rue des Ponchettes	06300
+Rue des Potiers	06000
+Rue des Régiments Niçois	06300
+Rue des Restanques	06000
+Rue des Roses	06100
+Rue des Serruriers	06300
+Rue des Védiantiens	06100
+Rue des Védiantines	06100
+Rue Desboutin	06300
+Rue Désiré Niel	06000
+Rue Désirée Clary	06000
+Rue Diderot	06000
+Rue Docteur Albert Balestre	06000
+Rue Docteur Albert Balestre prolongée	06000
+Rue Docteur Albert Baréty	06000
+Rue Docteur Ciais	06300
+Rue Docteur Ciaudo	06300
+Rue Docteur Fighiéra	06300
+Rue Docteur Jacques Guidoni	06000
+Rue Docteur Lanchier	06100
+Rue Docteur Levesi	06200
+Rue Docteur Louis Prat	06000
+Rue Docteur Michel Rosanoff	06000
+Rue Docteur Pierre Richelmi	06300
+Rue Dominique Paez	06200
+Rue Droite	06300
+Rue du 11 Novembre	06000
+Rue du 24 Mars	06100
+Rue du Béal	06300
+Rue du Capitaine Ferber	06200
+Rue du Chalet des Roses	06000
+Rue du Chanoine Bailet	06300
+Rue du Chanoine René Lorenzi	06300
+Rue du Château	06300
+Rue du Choeur	06300
+Rue du Collet	06300
+Rue du Colonel Frédéric-Henri Manhès	06100
+Rue du Commandant Raffalli	06000
+Rue du Comte Vert	06300
+Rue du Congrès	06000
+Rue du Docteur Ardoin	06300
+Rue du Four	06300
+Rue du Grand Pin	06100
+Rue du Jésus	06300
+Rue du Lazaret	06300
+Rue du Lycée	06000
+Rue du Malonat	06300
+Rue du Marché	06300
+Rue du Mont Gélas	06200
+Rue du Mont Ténibre	06200
+Rue du Moulin	06300
+Rue du Pertus	06300
+Rue du Petit Parc	06000
+Rue du Pont Vieux	06300
+Rue du Pontin	06300
+Rue du Professeur Maurice Sureau	06000
+Rue du Rocher	06000
+Rue du Sénat	06300
+Rue du Sicou	06300
+Rue du Soleil	06100
+Rue Dunoyer de Segonzac	06200
+Rue Eden	06100
+Rue Edouard Beri	06000
+Rue Edouard Dalmas	06100
+Rue Edouard Fer	06300
+Rue Edouard Scoffier	06300
+Rue El Nouzah	06000
+Rue Elisabeth II	06100
+Rue Elsa Triolet	06300
+Rue Emile Léonard	06300
+Rue Emilie	06100
+Rue Emma et Philippe Tiranty	06000
+Rue Emmanuel Costa	06000
+Rue Emmanuel Grout	06200
+Rue Emmanuel-Philibert	06300
+Rue Escoffier	06300
+Rue Esther Poggio	06300
+Rue Eugène Coste	06300
+Rue Eugène Emanuel	06000
+Rue Flore	06000
+Rue Fodéré	06300
+Rue Fodéré prolongée	06300
+Rue Foncet	06000
+Rue Fontaine de la Ville	06300
+Rue Fontana	06200
+Rue Fornéro Menei	06300
+Rue Francine	06100
+Rue Francine Leca	06200
+Rue Francis Carco	06300
+Rue Francis Gallo	06300
+Rue François 1er	06000
+Rue François Aune	06000
+Rue François Carlo	06000
+Rue François Guisol	06300
+Rue François Masse	06300
+Rue François Pellos	06000
+Rue François Zanin	06300
+Rue François-Louis Cappatti	06100
+Rue Françoise Giroud	06200
+Rue Frédéric Passy	06000
+Rue Gabriel Cordier	06300
+Rue Gabriel Fauré	06000
+Rue Gabriel Hanotaux	06000
+Rue Gabriel Voisin	06200
+Rue Galléan	06000
+Rue Gardon	06000
+Rue Gaspard Faraut	06200
+Rue Gaston Leroux	06300
+Rue Gaston Messiah	06300
+Rue Gauthier-Roux	06000
+Rue Général Hoche	06000
+Rue Général Laperrine	06100
+Rue Général Saramito	06300
+Rue Général Tordo	06000
+Rue Georges Bidault	06100
+Rue Georges Chapel	06300
+Rue Georges Doublet	06100
+Rue Georges Janvier	06300
+Rue Georges Picard	06300
+Rue Georges Ville	06300
+Rue Germaine Imbert	06000
+Rue Gioffrédo	06000
+Rue Gounod	06000
+Rue Grasset-Rey	06100
+Rue Grimaldi	06000
+Rue Gubernatis	06000
+Rue Guiglia	06000
+Rue Guiglionda de Sainte-Agathe	06300
+Rue Guigonis	06300
+Rue Guillaume Apollinaire	06000
+Rue Guillaume Boréa	06100
+Rue Gustav Adolf Mossa	06200
+Rue Gustave Deloye	06000
+Rue Gustave Garaud	06300
+Rue Gutenberg	06000
+Rue Halévy	06000
+Rue Hancy	06000
+Rue Henri Cordier	06000
+Rue Henri de Bournazel	06300
+Rue Henri Potez	06200
+Rue Henry de Cessole	06100
+Rue Herold	06000
+Rue Honoré Bailet	06300
+Rue Honoré Sauvan	06000
+Rue Honoré Ugo	06300
+Rue Humbert Ricolfi	06300
+Rue Isadora Duncan	06000
+Rue Jacqueline Auriol	06200
+Rue Jacques Bounin	06100
+Rue Jacques Carlin	06100
+Rue Jacques Dumas-Lairolle	06200
+Rue Jacques Médecin	06300
+Rue Jacques Offenbach	06000
+Rue Jean Allègre	06000
+Rue Jean André	06300
+Rue Jean Baptiste Barili	06200
+Rue Jean Baptiste Spinetta	06000
+Rue Jean Bonfante	06000
+Rue Jean Canavèse	06100
+Rue Jean Jacques Rousseau	06000
+Rue Jean Mermoz	06200
+Rue Jean Vigo	06200
+Rue Jean-Baptiste Calvino	06100
+Rue Jean-François Fulconis	06000
+Rue Jean-Henri Fabre	06100
+Rue Jean-Pierre Papon	06300
+Rue Jeanne d'Arc	06100
+Rue Jeanne Jugan	06000
+Rue Joseph Albert Bovis	06300
+Rue Joseph Arnaldi	06300
+Rue Joseph Boniffacy	06200
+Rue Joseph Brès	06000
+Rue Joseph Cadéi	06100
+Rue Joseph d'Arbaud	06100
+Rue Joseph et Xavier de Maistre	06100
+Rue Joseph Fricéro	06000
+Rue Joseph Gazan	06000
+Rue Joseph Miceu	06300
+Rue Joseph Passeron	06300
+Rue Joséphine Baker	06200
+Rue Josette Anelli	06300
+Rue Jouan Nicola	06300
+Rue Jules Belleudy	06200
+Rue Jules Bessi	06200
+Rue Jules Bianchi	06200
+Rue Jules et Aline Avigdor	06300
+Rue Jules Gilly	06300
+Rue Jules Michel	06300
+Rue Julien Lauprêtre	06200
+Rue Justin Montolivo	06000
+Rue Kosma	06000
+Rue la Belle Otéro	06000
+Rue La Bruyère	06000
+Rue La Fayette	06000
+Rue Laetitia	06100
+Rue Lamartine	06000
+Rue Lange	06100
+Rue Lascaris	06300
+Rue Laurent Giaume	06300
+Rue Lenval	06200
+Rue Léon Bertrand	06200
+Rue Léon Jouhaux	06300
+Rue Léotardi	06300
+Rue Les Marguerites	06100
+Rue Longchamp	06000
+Rue Louis Bilbaut	06100
+Rue Louis Blériot	06200
+Rue Louis Branche	06100
+Rue Louis de Coppet	06000
+Rue Louis Garneray	06300
+Rue Louis Gassin	06300
+Rue Louis Génari	06300
+Rue Louis Roubaudi	06100
+Rue Louise Ackermann	06000
+Rue Louise Colet	06200
+Rue Lucie Larboullet	06000
+Rue Maccarani	06000
+Rue Madeleine Faraut	06300
+Rue Maitre Gaston Charbonnier	06300
+Rue Manzone	06100
+Rue Maraldi	06300
+Rue Marceau	06000
+Rue Marcel Pagnol	06100
+Rue Marcel Vissian	06200
+Rue Maréchal Bernadotte	06000
+Rue Maréchal Davout	06000
+Rue Maréchal Joffre	06000
+Rue Maréchal Vauban	06300
+Rue Marie Bashkirtseff	06200
+Rue Martin-Seytour	06300
+Rue Maryse Carlin	06300
+Rue Mascoinat	06300
+Rue Masséna	06000
+Rue Massenet	06000
+Rue Maurice Jaubert	06000
+Rue Maurice Maccario	06000
+Rue Maurice Mignon	06200
+Rue Melchior de Vogue	06000
+Rue Mère Teresa	06200
+Rue Meyerbeer	06000
+Rue Michel Ange	06100
+Rue Michel de Tarnowsky	06000
+Rue Michelet	06100
+Rue Michelet prolongée	06100
+Rue Milton-Robbins	06300
+Rue Miollis	06000
+Rue Miralheti	06300
+Rue Miron	06000
+Rue Molière	06100
+Rue Monseigneur Alfred Daumas	06300
+Rue Mozart	06000
+Rue Muriel Marland-Militello	06200
+Rue Nathalie Masse	06000
+Rue Neuve	06300
+Rue Nicot de Villemain	06200
+Rue Niepce	06000
+Rue Oscar II	06000
+Rue Pacho	06300
+Rue Paganini	06000
+Rue Pairolière	06300
+Rue Panaït Istrati	06000
+Rue Pancho Gonzales	06200
+Rue Paradis	06000
+Rue Parmentier	06100
+Rue Passeroni	06300
+Rue Pastorelli	06000
+Rue Paul Bounin	06100
+Rue Paul Bourget	06100
+Rue Paul Déroulède	06000
+Rue Paul Gardon	06200
+Rue Paul Reboux	06300
+Rue Paul Valéry	06000
+Rue Pauline	06000
+Rue Penchienatti	06000
+Rue Père Auguste Valensin	06000
+Rue Père Joseph Bertaina	06000
+Rue Pertinax	06000
+Rue Pie Scoffier	06000
+Rue Pie-François Toesca	06300
+Rue Pierre Barelli	06000
+Rue Pierre Benoit	06100
+Rue Pierre Blancon	06300
+Rue Pierre Devoluy	06000
+Rue Pierre Garibo	06000
+Rue Pierre Grilli	06000
+Rue Pierre Mellarede	06100
+Rue Pierre Pietri	06000
+Rue Pierre Séguran	06300
+Rue Pierre Vogade	06100
+Rue Place Vieille	06300
+Rue Prince Maurice	06000
+Rue Professeur Delvalle	06000
+Rue Provana de Leyni	06000
+Rue Puget	06100
+Rue Raiberti	06000
+Rue Rancher	06000
+Rue Raoul Bosio	06300
+Rue Raoul Lesueur	06000
+Rue Raoul Ponchon	06300
+Rue Raspail	06000
+Rue Raymond Poincaré	06000
+Rue Raynardi	06000
+Rue Reine Jeanne	06000
+Rue René Houat	06300
+Rue René Sainson	06000
+Rue René Vietto	06200
+Rue Ribotti	06300
+Rue Robert Latouche	06200
+Rue Robert Thivin	06000
+Rue Robilant	06300
+Rue Roger Martin du Gard	06000
+Rue Rossetti	06300
+Rue Rossini	06000
+Rue Rouget de Lisle	06000
+Rue Royale	06000
+Rue Rusca	06300
+Rue Sacha Guitry	06000
+Rue Saïda	06200
+Rue Saint-Antoine	06200
+Rue Saint-Augustin	06300
+Rue Saint-François	06300
+Rue Saint-François de Paule	06300
+Rue Saint-Gaetan	06300
+Rue Saint-Honoré	06200
+Rue Saint-Hospice	06300
+Rue Saint-Jean d'Angely	06300
+Rue Saint-Joseph	06300
+Rue Saint-Philippe	06000
+Rue Saint-Saens	06000
+Rue Saint-Siagre	06000
+Rue Saint-Suaire	06300
+Rue Saint-Vincent	06300
+Rue Sainte-Claire	06300
+Rue Sainte-Réparate	06300
+Rue Saussure	06000
+Rue Scaliéro	06300
+Rue Sevan	06000
+Rue Sincaire	06300
+Rue Smollett	06300
+Rue Soleau	06300
+Rue Sorgentino	06300
+Rue Spitalieri	06000
+Rue Sulzer	06300
+Rue Thaon de Revel	06300
+Rue Théodore de Banville	06100
+Rue Théodore Gasiglia	06300
+Rue Thyde Monnier	06100
+Rue Tonduti de l'Escarène	06000
+Rue Torrini	06000
+Rue Trachel	06000
+Rue Valperga	06000
+Rue Van Loo	06300
+Rue Veillon	06000
+Rue Verdi	06000
+Rue Vernier	06000
+Rue Victor Juge	06000
+Rue Victoria Fer	06200
+Rue Victorien Sardou	06100
+Rue Vincent Bermond	06200
+Rue Vincent Fossat	06100
+Rue Vingt Deuxième B.C.A.	06300
+Rue Voltaire	06000
+Rue Von Derwies	06100
+Ruelle de l'Abbaye	06300
+Ruelle de l'Eau Fraîche	06000
+Ruelle de la Boucherie	06300
+Ruelle de la Halle aux Herbes	06300
+Ruelle des Canebiers	06000
+Ruelle des Moulins	06300
+Ruelle des Prés	06000
+Ruelle du Malonat	06300
+Ruelle du Ruisseau	06300
+Ruelle du Seminaire	06300
+Ruelle Michel Ange	06100
+Ruelle Miron - Lépante	06000
+Ruelle Saint-André	06300
+Ruelle Saint-Augustin	06300
+Ruelle Saint-François	06300
+Ruelle Saint-Martin	06300
+Ruelle Saint-Roch	06300
+Ruelle Sainte-Catherine	06000
+Ruelle Sainte-Marie	06300
+Sentier Caravadossi	06000
+Sentier de l'Ecole de Bon Voyage	06300
+Sentier de la Madone	06100
+Sentier de la Montagne	06200
+Sentier de liaison de la rue des Etoiles - à la route de Bellet	06200
+Sentier des Grenadiers	06100
+Sentier du Bord de Mer	06300
+Sentier du Canal des Arrosants	06100
+Sentier du Hameau Wors	06100
+Sentier Muletier de la Couletta	06200
+Sentier reliant l'Impasse Victor Lavagna - Voie du lotissement Château Rosemont	06300
+Sentier Valentini	06000
+Square Albert Blanchi	06000
+Square Alphonse Daudet	06000
+Square Auguste Icart	06300
+Square Barons de Berre	06100
+Square Chanoine Robert Henri Barbe	06100
+Square Christian Morando	06000
+Square Colonel Jeanpierre	06000
+Square Constantin de Chateauneuf	06300
+Square d'Alicante	06300
+Square de Cuneo	06300
+Square de la Chapelle Sainte-Monique	06200
+Square Dédé Truqui	06300
+Square des Plateaux Fleuris	06200
+Square Docteur Zamenhof	06000
+Square Dominique Durandy	06000
+Square du Corps Expéditionnaire Français	06100
+Square du XVe Corps	06000
+Square Emile Rostan	06300
+Square Félix Ziem	06200
+Square François Suarez	06300
+Square Général Ferrié	06000
+Square Général Leclerc	06000
+Square Gustave Desplaces	06000
+Square Henri Betti	06300
+Square Henri Christine	06000
+Square Jean Baptiste Carpeaux	06100
+Square Jean Gabin	06000
+Square Louis Maccagno	06200
+Square Marc Antoine Charpentier	06000
+Square Marcel Kirchner	06200
+Square Marius Otto	06100
+Square Michaud de Beauretour	06200
+Square Narvik	06000
+Square Notre-Dame	06000
+Square Paul Gordeaux	06100
+Square Paul Musso	06300
+Square Pierre Rocher	06000
+Square Primerose	06000
+Square Puccini	06000
+Square Raimu	06000
+Square Richard Wagner	06000
+Square Roger Boyer	06100
+Square Roger Simon	06200
+Square Thierry Di Masso	06300
+Square Victoria	06300
+Square Vincent Bourrel	06200
+Square Yitzhak Rabin	06000
+Traverse Adolphe Isnard - Serrat	06000
+Traverse Barla	06000
+Traverse Boulevard Jean-Baptiste Verany - Avenue Maréchal Lyautey	06000
+Traverse de la Bourgada	06000
+Traverse de la Digue des Français	06200
+Traverse des Arboras	06200
+Traverse des Baraques	06200
+Traverse des Bosquets	06200
+Traverse des Maraîchers	06200
+Traverse du Square Maccagno	06200
+Traverse Flandres-Dunkerque 1940	06000
+Traverse Garibaldi	06300
+Traverse Giacobi	06300
+Traverse Isabelle	06100
+Traverse Jean Monnet	06000
+Traverse Lympia	06300
+Traverse Malraux	06000
+Traverse Nicoletti	06200
+Traverse Palais des Expositions	06300
+Traverse Rosa Bonheur n°1	06200
+Traverse Rosa Bonheur n°2	06200
+Traverse Rue Chanoine Bailet/Rue Acchiardi de Saint-Léger	06300
+Traverse Suzanne Lenglen	06000
+Traverse Villermont	06000
+Tunnel André Liautaud	06300
+Tunnel André Malraux	06000
+Tunnel de l'Avenue	06000
+Tunnel de la Gare	06000
+Tunnel de Magnan	06000
+Tunnel du Congrès	06000
+Tunnel Leon Deloy	06300
+Tunnel Saint-Etienne	06000
+Tunnel Saluzzo	06300
+Venelle des Iscles du Moulin	06200
+Via Julia-Augusta	06200
+Vieux Chemin de Bellet	06200
+Vieux Chemin de Cimiez	06000
+Vieux Chemin de Crémat	06200
+Vieux Chemin de Crémat raccourci n°1	06200
+Vieux Chemin de Crémat raccourci n°2	06200
+Vieux Chemin de Crémat raccourci n°3	06200
+Vieux Chemin de Fabron (raccourci n°2)	06200
+Vieux Chemin de Fabron (raccourci n°3)	06200
+Vieux Chemin de Fabron (raccourci n°4)	06200
+Vieux Chemin de Fabron (raccourci n°5)	06200
+Vieux Chemin de Gairaut	06100
+Vieux Chemin de la Lauvette	06300
+Vieux Chemin de Saint-Antoine raccourci n°1	06200
+Vieux Chemin de Saint-Antoine raccourci n°2	06200
+Vieux Chemin de Saint-Antoine raccourci n°3	06200
+Vieux Chemin de Saint-Antoine raccourci n°4	06200
+Vieux Chemin de Terron	06200
+Voie Aurélienne	06300
+Voie aux n°3/5 Chemin des Chênes Blancs	06300
+Voie de desserte de la cité Fighiéra	06300
+Voie de desserte du Parc Lubonis	06000
+Voie du Hameau des Cappan	06200
+Voie du lotissement Domaine de Chateauneuf	06100
+Voie du lotissement Le Manoir	06100
+Voie du lotissement Mont Boron - Park	06300
+Voie du lotissement Parc Orangini	06100
+Voie du lotissement Saint-Pierre de Rimiez	06100
+Voie lotissement Les Vergers de Gairaut	06100
+Voie résidences les Terrasses de la Corniche Fleurie	06300
+Voie Romaine	06000
