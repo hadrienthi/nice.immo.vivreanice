@@ -856,6 +856,12 @@ var VOIES=null;
 function motsVoie(t){return String(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
 fetch(VOIES_URL).then(function(r){return r.ok?r.text():'';}).then(function(t){
 var l=t.split('\n').filter(Boolean).map(function(x){var p=x.split('\t');return {nom:p[0],cp:p[1]||'',cle:motsVoie(p[0])};});
+/* 30/9 (capture Hadrien : « 33 r » proposait Raccourci avant Rue) : les types
+   de voie les plus fréquents passent devant (Rue > Route > Raccourci,
+   Avenue > Allée, Boulevard, Chemin > Corniche) */
+var freq={};l.forEach(function(v){var m=v.cle.split(' ')[0];freq[m]=(freq[m]||0)+1;});
+l.forEach(function(v){v.poids=freq[v.cle.split(' ')[0]]||0;});
+l.sort(function(a,b){return b.poids-a.poids||a.nom.localeCompare(b.nom,'fr');});
 if(l.length)VOIES=l;
 }).catch(function(){});
 /* propositions locales pour la saisie t : { label, texte } ; numéro conservé */
