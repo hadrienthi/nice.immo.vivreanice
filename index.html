@@ -238,7 +238,7 @@ footer.bottom .ia{font-family:var(--font-heading);font-weight:700;font-size:21px
 .point{color:var(--rouge)}
 .jauge-barre i{background:var(--rouge)}
 .jauge-avert{font-family:var(--font-body);font-style:normal;font-size:clamp(12px,.95vw,16px);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#111;margin:12px 0 0}
-.cr .btn{background:#fff;color:#111;border:1.5px solid #111}
+.cr .btn{background:#fff;color:#111;border:1.5px solid #111;height:48px;font-size:15px;padding:0 22px} /* 2/10 (Hadrien) : même taille que les boutons contact */
 .cr .btn:hover{background:#111;color:#fff}
 .r-valeur{font-size:clamp(20px,1.8vw,30px);letter-spacing:-.01em;margin:0 0 6px}
 .r-titre{font-size:clamp(19px,1.35vw,23px)}
@@ -323,7 +323,7 @@ form.saisie .mesure{position:absolute;left:0;top:0;visibility:hidden;white-space
   form.saisie .mesure{font-size:16px}
   .envoyer{width:34px;height:34px}
   .r-suite{font-size:17px}
-  .r-suite .btn{height:auto;min-height:44px;font-size:13.5px;padding:10px 18px;white-space:normal;text-align:center;line-height:1.25;letter-spacing:.06em}
+  .r-suite .btn,.cr .btn{height:auto;min-height:44px;font-size:13.5px;padding:10px 18px;white-space:normal;text-align:center;line-height:1.25;letter-spacing:.06em}
   .puces-grandes{grid-template-columns:1fr}
 }
 </style>
@@ -914,8 +914,12 @@ var avecNum=/^\s*\d/.test(t);
 fts=fts.filter(function(f){var ty=f.properties.type;return avecNum?ty==='housenumber':(ty==='housenumber'||ty==='street');});
 if(!fts.length){if(!locales.length)suggEfface();return;} /* BAN muette : la liste locale reste */
 var items=fts.map(function(f){return {label:f.properties.label};}),vus={};
-items.forEach(function(it){vus[motsVoie(it.label)]=1;});
-locales.forEach(function(it){var c=motsVoie(it.label);if(items.length<6&&!vus[c]){vus[c]=1;items.push(it);}});
+/* 2/10 (capture Hadrien : « 23 Promenade des Anglais » deux fois, 06200 par la BAN
+   et 06000 par la liste locale, qui n'a qu'un code postal par voie) : le doublon
+   se juge sans le code postal, la BAN gardant la main */
+var sansCP=function(l){return motsVoie(String(l).replace(/\b\d{5}\b/,''));};
+items.forEach(function(it){vus[sansCP(it.label)]=1;});
+locales.forEach(function(it){var c=sansCP(it.label);if(items.length<6&&!vus[c]){vus[c]=1;items.push(it);}});
 suggAffiche(items);
 }).catch(function(){});
 },280);
