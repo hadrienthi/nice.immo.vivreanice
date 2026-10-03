@@ -329,83 +329,63 @@ form.saisie .mesure{position:absolute;left:0;top:0;visibility:hidden;white-space
 </style>
 
 <style id="charte-verte">
-/* 3/10/2026 (décision Hadrien) : CHARTE VERTE PLEINE PAGE, la maquette du père telle
-   quelle. Fond vert profond partout, textes crème, accent orange unique, pastilles
-   d'icônes crème, boutons bordés crème avec flèche orange, carte transparente bordée.
-   Mon avis (fond sombre pour lire un résultat dense, PDF, charte réseau) est consigné
-   dans _ETAT-DU-PROJET.md ; la version « cadre vert » (corps clair) reste disponible
-   dans ateliers/maquette-vert-2026-10-03/. À l'impression : page blanche, texte noir.
-   Cette feuille redéfinit les couleurs sans toucher aux textes ni au parcours. */
-:root{--vert:#0f3d2e;--vert-2:#154a39;--vert-3:#1d5a46;--creme:#f4efe4;--creme-2:#e6dfd0;--creme-70:rgba(244,239,228,.72);--creme-40:rgba(244,239,228,.42);--creme-18:rgba(244,239,228,.18);--accent:#e8713a;--accent-fonce:#d9641f}
-:root{--rouge:var(--accent);--rouge-jauge:var(--accent);--color-text:var(--creme);--color-neutral-700:var(--creme-70);--color-neutral-800:var(--creme-70);--color-divider:var(--creme-18)}
-html{background:var(--vert)}
-body{background:var(--vert);color:var(--creme)}
-a{color:inherit}
-:focus-visible{outline-color:var(--creme)}
-/* en-tête, pied */
-header.top .wrap{background:linear-gradient(var(--creme-40),var(--creme-40)) bottom center/calc(100% - 2*var(--pad)) 1px no-repeat;padding-top:22px;padding-bottom:22px}
-header.top .brand,nav.menu{color:var(--creme)}
-.brand .point{color:var(--accent)}
-nav.menu a:hover,nav.menu a[aria-current]{border-bottom-color:var(--accent)}
-nav.menu a[aria-current]{color:var(--accent)}
-footer.bottom .wrap{background:linear-gradient(var(--creme-40),var(--creme-40)) top center/calc(100% - 2*var(--pad)) 1px no-repeat;color:var(--creme)}
-footer.bottom .liens a{text-decoration-color:var(--accent);text-decoration-thickness:1.5px}
-footer.bottom .ia{color:var(--creme)}
-/* titre */
+/* 3/10/2026 (décision Hadrien, après comparatif de 4 rendus : Claude outputs/
+   nice-immo-charte-verte-4-rendus-2026-10-03.pdf) : CHARTE VERTE « CADRE », rendu n°3.
+   En-tête, bande du titre et pied en vert profond ; carte d'estimation blanche qui mord
+   sur la bande ; corps crème clair ; accent orange unique (#d9641f en petit texte, 5,1:1
+   sur blanc ; #e8713a pour le « IA » du titre sur fond vert). Les deux petits paragraphes
+   de la bande de confiance gagnent un peu d'interlettrage (+0,025 em). À l'impression :
+   page blanche. Variantes et bascule rouge/orange : ateliers/maquette-vert-2026-10-03/ ;
+   pleine page verte (maquette du père) : ateliers/sauvegarde-index-2026-10-03-pleine-
+   page-verte.html. Cette feuille redéfinit les couleurs sans toucher aux textes ni au
+   parcours. */
+:root{--vert:#0f3d2e;--creme:#f4efe4;--creme-page:#faf8f3;--accent:#d9641f;--accent-titre:#e8713a}
+:root{--rouge:var(--accent);--rouge-jauge:var(--accent)}
+body{background:var(--creme-page)}
+/* en-tête */
+header.top{background:var(--vert)}
+header.top .wrap{background:none;padding-top:22px;padding-bottom:14px}
+header.top .brand{color:var(--creme)}
+header.top .brand .point{color:var(--accent-titre)}
+nav.menu{color:var(--creme)}
+nav.menu a:hover,nav.menu a[aria-current]{border-bottom-color:var(--accent-titre)}
+/* bande du titre, en continuité de l'en-tête */
+.intro{position:relative;z-index:0;padding-bottom:clamp(44px,4vw,70px)}
+.intro::before{content:'';position:absolute;z-index:-1;top:-2px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--vert)}
 .intro h1,.intro .sans{color:var(--creme)}
-.intro h1 .ia{color:var(--accent)}
-/* carte d'échange */
-.card{background:transparent;border-color:var(--creme-40)}
-.card.glisse{outline-color:var(--creme);background:var(--vert-2)}
-.card.glisse::after{background:rgba(15,61,46,.9);color:var(--creme)}
-.sep{background:var(--creme-18)}
-.jauge-lib,.jauge-etape{color:var(--creme)}
-.jauge-barre{background:var(--creme-18)}
-.jauge-avert{color:var(--creme-70)}
-.q-kicker,.q-kicker b{color:var(--accent)}
-.q-icone,.conf-icone{background:var(--creme)}
-.q-icone svg,.conf-icone svg{color:var(--accent)}
-.msg.ana,.msg{color:var(--creme)}
-.msg.ana.note{border-left-color:var(--accent)}
-.msg.sys{color:var(--creme-70);border-color:var(--creme-40)}
-.chip{background:transparent;color:var(--creme);border-color:var(--creme-40)}
-.chip:hover{border-color:var(--creme)}
-.chip.sec{color:var(--creme-70)}
-/* boutons de réponse */
-.puce{background:transparent;color:var(--creme);border-color:var(--creme)}
-.puce .fl{color:var(--accent)}
-.puce:hover{background:var(--creme-18)}
-.puce:active,.puce.act{background:var(--creme);color:var(--vert)}
-.puce.act:hover{background:var(--creme-2)}
-.puce.act .fl{color:var(--accent-fonce)}
-.puce.sec{color:var(--creme-70);border-color:var(--creme-40)}
-.puce.sec:active{background:var(--creme-18);color:var(--creme)}
-.nav-etapes button{background:transparent;color:var(--creme);border-color:var(--creme)}
-.nav-etapes button:hover:not(:disabled){background:var(--creme);color:var(--vert)}
-/* saisie */
-.champ{background:transparent;border-color:var(--creme)}
-.champ input{color:var(--creme)}
-.champ input::placeholder{color:var(--creme-70)}
-.unite{color:var(--creme-70)}
-.envoyer{background:var(--creme);color:var(--vert)}
-.envoyer:hover{background:var(--creme-2)}
-/* résultat */
-.r-valeur,.r-titre{color:var(--creme)}
-.r-sous{color:var(--creme-70)}
-.r-titre{border-top-color:var(--creme-18)}
-.r-liste li::before{background:var(--accent)}
-.cr .btn{background:transparent;color:var(--creme);border-color:var(--creme)}
-.cr .btn:hover{background:var(--creme);color:var(--vert)}
-.r-suite .btn{background:transparent;color:var(--creme);border-color:var(--creme)}
-.r-suite .btn:hover{background:var(--creme);color:var(--vert)}
-.smileys button{filter:grayscale(1) brightness(1.6)}
-.smileys button:hover,.smileys button.choisi{filter:none}
+.intro h1 .ia{color:var(--accent-titre)}
+/* carte d'estimation */
+.card{background:#fff;border-color:#cfc9bc;margin-top:clamp(-34px,-2.6vw,-22px);position:relative;z-index:1;box-shadow:0 10px 30px rgba(15,61,46,.12)}
+.jauge-barre{background:#e9e4d8}
+.intro h1 .ia,.q-kicker,.q-kicker b{color:var(--accent)}
+.intro h1 .ia{color:var(--accent-titre)}
+:focus-visible{outline-color:var(--vert)}
+.puce:active,.puce.act{background:var(--vert);border-color:var(--vert);color:#fff}
+.puce.act:hover{background:#174a39}
+.nav-etapes button:hover:not(:disabled){background:var(--vert);border-color:var(--vert);color:#fff}
 /* bande de confiance */
-.confiance{color:var(--creme)}
-.conf p{color:var(--creme)}
-.conf-sep{background:var(--creme-40)}
-/* impression : page blanche */
-@media print{html,body{background:#fff!important;color:#111!important}:root{--color-text:#111;--color-neutral-700:#555;--color-neutral-800:#333;--color-divider:#ddd}.card{border-color:#aaa}header.top .brand,nav.menu,footer.bottom,footer.bottom .ia,.intro h1,.intro .sans,.msg,.msg.ana,.r-valeur,.r-titre,.conf p,.confiance,.jauge-lib,.jauge-etape{color:#111!important}.r-sous{color:#333!important}.q-icone,.conf-icone{background:#efefef}.q-icone svg,.conf-icone svg{color:#111}.r-liste li::before{background:#111}.puce,.chip,.cr .btn,.r-suite .btn{background:#fff!important;color:#111!important;border-color:#111!important}}
+.confiance{color:#2b2b2b}
+.conf p{letter-spacing:.025em}
+/* pied */
+footer.bottom{background:var(--vert);color:var(--creme);margin-top:auto}
+footer.bottom .wrap{background:none}
+footer.bottom a,footer.bottom .ia{color:var(--creme)}
+footer.bottom .liens a{text-decoration-color:var(--accent-titre)}
+@media print{header.top,footer.bottom{background:#fff;color:#111}.intro::before{display:none}.intro h1,.intro .sans,header.top .brand,nav.menu,footer.bottom a,footer.bottom .ia{color:#111}.card{margin-top:0;box-shadow:none}}
+
+/* 3/10 (Hadrien : « il faut être plus clair sur les photos, le mettre en valeur ») :
+   le commentaire photo est mis en évidence quand il signale une incohérence (gabarit
+   fixe du worker) ou une photo écartée : encadré, kicker, bouton vers la réponse à
+   corriger. Le commentaire ordinaire garde son style discret. */
+.r-alerte{margin:14px 0 0;border:1.5px solid var(--rouge);border-left-width:6px;border-radius:14px;padding:16px 20px 18px;background:#fff7f0}
+.r-alerte .k{display:block;font-family:var(--font-body);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rouge);margin:0 0 6px}
+.r-alerte p{margin:0;font-family:var(--font-texte);font-size:19px;line-height:1.5}
+.r-alerte .btn{margin-top:14px;height:44px;font-size:14px;padding:0 20px;background:var(--rouge);color:#fff;border:1.5px solid var(--rouge)}
+.r-alerte .btn:hover{background:#111;border-color:#111}
+.r-alerte.ecartee{background:#f6f6f3;border-color:#8a8a8a}
+.r-alerte.ecartee .k{color:#555}
+.msg.ana.note.alerte{border-left:6px solid var(--rouge);background:#fff7f0;border-radius:0 14px 14px 0;padding:12px 18px}
+@media print{.r-alerte{background:#fff}.r-alerte .btn{display:none}}
 </style>
 </head>
 <body>
@@ -1181,7 +1161,7 @@ try{
   if(res.ok&&data&&data.commentaire)commentairePhotos=String(data.commentaire);
 }catch(e){}
 penser(false);
-if(commentairePhotos)bulle('ana note','Nice.immo',commentairePhotos);
+if(commentairePhotos)bulle('ana note'+(/^\s*(Votre photo ne correspond pas|Cette photo ne peut pas)/i.test(commentairePhotos)?' alerte':''),'Nice.immo',commentairePhotos);
 else bulle('sys',null,'Vos photos n’ont pas pu être examinées : l’estimation continue sans elles.');
 vignettes.classList.remove('on');
 occupe=false;repondu.photos=true;
@@ -1316,7 +1296,27 @@ liste=null;el.textContent=typo(t);d.appendChild(el);vus++;
    résultat, sous le « Pourquoi », et survit aux retours arrière. */
 if(commentairePhotos){
 var hp=document.createElement('h2');hp.className='r-titre';hp.textContent='Ce que montrent vos photos';d.appendChild(hp);
-var pp=document.createElement('p');pp.className='r-p r-photos';pp.textContent=typo(commentairePhotos);d.appendChild(pp);
+var cp=commentairePhotos,incoh=/^\s*Votre photo ne correspond pas/i.test(cp),ecart=/^\s*Cette photo ne peut pas être prise en compte/i.test(cp);
+if(incoh||ecart){
+  /* 3/10 : incohérence photo / photo écartée -> encadré mis en valeur */
+  var al=document.createElement('div');al.className='r-alerte'+(ecart?' ecartee':'');
+  var k=document.createElement('span');k.className='k';k.textContent=incoh?'À vérifier avant de retenir ce chiffre':'Photo non prise en compte';al.appendChild(k);
+  var pa=document.createElement('p');pa.textContent=typo(cp);al.appendChild(pa);
+  if(incoh){
+    /* la réponse visée : on devine l'étape d'après les mots du message, sinon la liste des questions */
+    var cible='etat',m=cp.toLowerCase();
+    if(/vue|mer|vis-à-vis|vis-a-vis/.test(m)&&!/état|etat/.test(m))cible='vue';
+    else if(/terrasse|balcon|jardin|extérieur|exterieur/.test(m)&&!/état|etat/.test(m))cible=dossier.type==='maison'?'terrain':'exterieur';
+    else if(/ascenseur/.test(m)&&!/état|etat/.test(m))cible='ascenseur';
+    else if(/étage|etage/.test(m)&&!/état|etat/.test(m))cible='etage';
+    var bm=document.createElement('button');bm.type='button';bm.className='btn';bm.textContent='Modifier ma réponse';
+    bm.addEventListener('click',function(){if(occupe)return;var o=ordre();montreEtape(o.indexOf(cible)>=0?cible:o[o.length-1]);});
+    al.appendChild(bm);
+  }
+  d.appendChild(al);
+}else{
+  var pp=document.createElement('p');pp.className='r-p r-photos';pp.textContent=typo(cp);d.appendChild(pp);
+}
 }
 flux.appendChild(d);
 var ct=d.getBoundingClientRect().top;if(ct<0)window.scrollBy(0,ct-120);
