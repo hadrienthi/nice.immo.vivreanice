@@ -18,7 +18,7 @@
 <meta name="twitter:title" content="Estimation immobilière à Nice par IA | Nice.immo">
 <meta name="twitter:description" content="Votre bien est estimé à partir de 22 118 ventes réelles notariées à Nice depuis 2023. Sans inscription, sans email, sans téléphone.">
 <meta name="twitter:image" content="https://nice.immo/og-nice.jpg">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#0f3d2e">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://nice.immo/#site","url":"https://nice.immo/","name":"Nice.immo","inLanguage":"fr","description":"Estimation immobilière à Nice par IA, fondée sur les ventes réelles notariées.","publisher":{"@id":"https://nice.immo/#org"}},{"@type":"Organization","@id":"https://nice.immo/#org","name":"Nice.immo","url":"https://nice.immo/","email":"contact@nice.immo","logo":"https://nice.immo/og-nice.jpg"},{"@type":"WebPage","@id":"https://nice.immo/#page","url":"https://nice.immo/","name":"Estimation immobilière à Nice par IA | Nice.immo","isPartOf":{"@id":"https://nice.immo/#site"},"about":{"@type":"Place","name":"Nice"}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -326,6 +326,86 @@ form.saisie .mesure{position:absolute;left:0;top:0;visibility:hidden;white-space
   .r-suite .btn,.cr .btn{height:auto;min-height:44px;font-size:13.5px;padding:10px 18px;white-space:normal;text-align:center;line-height:1.25;letter-spacing:.06em}
   .puces-grandes{grid-template-columns:1fr}
 }
+</style>
+
+<style id="charte-verte">
+/* 3/10/2026 (décision Hadrien) : CHARTE VERTE PLEINE PAGE, la maquette du père telle
+   quelle. Fond vert profond partout, textes crème, accent orange unique, pastilles
+   d'icônes crème, boutons bordés crème avec flèche orange, carte transparente bordée.
+   Mon avis (fond sombre pour lire un résultat dense, PDF, charte réseau) est consigné
+   dans _ETAT-DU-PROJET.md ; la version « cadre vert » (corps clair) reste disponible
+   dans ateliers/maquette-vert-2026-10-03/. À l'impression : page blanche, texte noir.
+   Cette feuille redéfinit les couleurs sans toucher aux textes ni au parcours. */
+:root{--vert:#0f3d2e;--vert-2:#154a39;--vert-3:#1d5a46;--creme:#f4efe4;--creme-2:#e6dfd0;--creme-70:rgba(244,239,228,.72);--creme-40:rgba(244,239,228,.42);--creme-18:rgba(244,239,228,.18);--accent:#e8713a;--accent-fonce:#d9641f}
+:root{--rouge:var(--accent);--rouge-jauge:var(--accent);--color-text:var(--creme);--color-neutral-700:var(--creme-70);--color-neutral-800:var(--creme-70);--color-divider:var(--creme-18)}
+html{background:var(--vert)}
+body{background:var(--vert);color:var(--creme)}
+a{color:inherit}
+:focus-visible{outline-color:var(--creme)}
+/* en-tête, pied */
+header.top .wrap{background:linear-gradient(var(--creme-40),var(--creme-40)) bottom center/calc(100% - 2*var(--pad)) 1px no-repeat;padding-top:22px;padding-bottom:22px}
+header.top .brand,nav.menu{color:var(--creme)}
+.brand .point{color:var(--accent)}
+nav.menu a:hover,nav.menu a[aria-current]{border-bottom-color:var(--accent)}
+nav.menu a[aria-current]{color:var(--accent)}
+footer.bottom .wrap{background:linear-gradient(var(--creme-40),var(--creme-40)) top center/calc(100% - 2*var(--pad)) 1px no-repeat;color:var(--creme)}
+footer.bottom .liens a{text-decoration-color:var(--accent);text-decoration-thickness:1.5px}
+footer.bottom .ia{color:var(--creme)}
+/* titre */
+.intro h1,.intro .sans{color:var(--creme)}
+.intro h1 .ia{color:var(--accent)}
+/* carte d'échange */
+.card{background:transparent;border-color:var(--creme-40)}
+.card.glisse{outline-color:var(--creme);background:var(--vert-2)}
+.card.glisse::after{background:rgba(15,61,46,.9);color:var(--creme)}
+.sep{background:var(--creme-18)}
+.jauge-lib,.jauge-etape{color:var(--creme)}
+.jauge-barre{background:var(--creme-18)}
+.jauge-avert{color:var(--creme-70)}
+.q-kicker,.q-kicker b{color:var(--accent)}
+.q-icone,.conf-icone{background:var(--creme)}
+.q-icone svg,.conf-icone svg{color:var(--accent)}
+.msg.ana,.msg{color:var(--creme)}
+.msg.ana.note{border-left-color:var(--accent)}
+.msg.sys{color:var(--creme-70);border-color:var(--creme-40)}
+.chip{background:transparent;color:var(--creme);border-color:var(--creme-40)}
+.chip:hover{border-color:var(--creme)}
+.chip.sec{color:var(--creme-70)}
+/* boutons de réponse */
+.puce{background:transparent;color:var(--creme);border-color:var(--creme)}
+.puce .fl{color:var(--accent)}
+.puce:hover{background:var(--creme-18)}
+.puce:active,.puce.act{background:var(--creme);color:var(--vert)}
+.puce.act:hover{background:var(--creme-2)}
+.puce.act .fl{color:var(--accent-fonce)}
+.puce.sec{color:var(--creme-70);border-color:var(--creme-40)}
+.puce.sec:active{background:var(--creme-18);color:var(--creme)}
+.nav-etapes button{background:transparent;color:var(--creme);border-color:var(--creme)}
+.nav-etapes button:hover:not(:disabled){background:var(--creme);color:var(--vert)}
+/* saisie */
+.champ{background:transparent;border-color:var(--creme)}
+.champ input{color:var(--creme)}
+.champ input::placeholder{color:var(--creme-70)}
+.unite{color:var(--creme-70)}
+.envoyer{background:var(--creme);color:var(--vert)}
+.envoyer:hover{background:var(--creme-2)}
+/* résultat */
+.r-valeur,.r-titre{color:var(--creme)}
+.r-sous{color:var(--creme-70)}
+.r-titre{border-top-color:var(--creme-18)}
+.r-liste li::before{background:var(--accent)}
+.cr .btn{background:transparent;color:var(--creme);border-color:var(--creme)}
+.cr .btn:hover{background:var(--creme);color:var(--vert)}
+.r-suite .btn{background:transparent;color:var(--creme);border-color:var(--creme)}
+.r-suite .btn:hover{background:var(--creme);color:var(--vert)}
+.smileys button{filter:grayscale(1) brightness(1.6)}
+.smileys button:hover,.smileys button.choisi{filter:none}
+/* bande de confiance */
+.confiance{color:var(--creme)}
+.conf p{color:var(--creme)}
+.conf-sep{background:var(--creme-40)}
+/* impression : page blanche */
+@media print{html,body{background:#fff!important;color:#111!important}:root{--color-text:#111;--color-neutral-700:#555;--color-neutral-800:#333;--color-divider:#ddd}.card{border-color:#aaa}header.top .brand,nav.menu,footer.bottom,footer.bottom .ia,.intro h1,.intro .sans,.msg,.msg.ana,.r-valeur,.r-titre,.conf p,.confiance,.jauge-lib,.jauge-etape{color:#111!important}.r-sous{color:#333!important}.q-icone,.conf-icone{background:#efefef}.q-icone svg,.conf-icone svg{color:#111}.r-liste li::before{background:#111}.puce,.chip,.cr .btn,.r-suite .btn{background:#fff!important;color:#111!important;border-color:#111!important}}
 </style>
 </head>
 <body>
