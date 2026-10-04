@@ -385,6 +385,12 @@ footer.bottom .liens a{text-decoration-color:var(--accent-titre)}
 .r-alerte.ecartee{background:#f6f6f3;border-color:#8a8a8a}
 .r-alerte.ecartee .k{color:#555}
 .msg.ana.note.alerte{border-left:6px solid var(--rouge);background:#fff7f0;border-radius:0 14px 14px 0;padding:12px 18px}
+.photo-ajout{margin:-4px 0 6px}
+.photo-ajout button{display:inline-flex;align-items:center;gap:8px;border:1px dashed var(--rouge);color:var(--rouge);background:#fff7f0;border-radius:999px;padding:7px 14px 7px 12px;font-family:var(--font-body);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.photo-ajout button svg{width:18px;height:18px}
+.photo-ajout button:hover{background:var(--rouge);color:#fff}
+.photo-ajout button:disabled{border-style:solid;opacity:.7;cursor:default;background:#fff7f0;color:var(--rouge)}
+@media print{.photo-ajout{display:none}}
 .msg.sys.alerte{border:1.5px solid var(--rouge);border-left-width:6px;border-style:solid;border-radius:14px;background:#fff7f0;color:#111;font-size:17px;padding:12px 18px}
 @media print{.r-alerte{background:#fff}.r-alerte .btn{display:none}}
 </style>
@@ -737,7 +743,7 @@ vue:{question:function(){return 'Quelle est la vue depuis le bien ?';},mode:'puc
  options:function(){return ['Vue mer','Sans vis-à-vis','Vue ville'];}, /* exclusives : on choisit la meilleure qui s'applique */
  applique:function(r){dossier.vue=r==='Vue mer'?'mer':r==='Sans vis-à-vis'?'degagee':'ville';},
  chip:function(){return {mer:'Vue mer',degagee:'Sans vis-à-vis',ville:'Vue ville'}[dossier.vue]||null;},nom:'Vue'},
-photos:{question:function(){return 'Souhaitez-vous ajouter jusqu’à 3 photos du bien ? Elles ne sont jamais conservées.';},mode:'photos',chip:function(){return null;}}
+photos:{question:function(){return photos.length?(photos.length===1?'Votre photo va être examinée. Souhaitez-vous en ajouter une autre (3 au maximum) ?':'Vos '+photos.length+' photos vont être examinées.'+(photos.length<MAX_PHOTOS?' Souhaitez-vous en ajouter une autre ?':'')):'Souhaitez-vous ajouter jusqu’à 3 photos du bien ? Elles ne sont jamais conservées.';},mode:'photos',chip:function(){return null;}}
 };
 function parseEtage(t){
 var s=String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
@@ -865,6 +871,7 @@ if(bp.disabled&&bs.disabled)nv.classList.add('vide'); /* première question : pa
 flux.appendChild(nv);
 }
 montreAlertes(); /* 4/10 : contrôle de cohérence (gabarit compris), en orange */
+if(id!=='photos')flux.appendChild(boutonPhoto()); /* 4/10 (Hadrien) : l'ajout de photos est possible à toutes les étapes */
 if(id==='photos'&&!estimationFaite)lanceAnticipation(); /* 26/9 : le résultat se prépare pendant l'étape photos */
 var d=bulle('ana','Nice.immo','');
 if(id==='projet'||id==='photos'){ /* kicker photos (cahier, point 7) : accueil et étape photos seulement */
@@ -1119,7 +1126,7 @@ R.innerHTML=h;
    proposées en fin de parcours, commentées par l'IA sans puces ---- */
 var MAX_PHOTOS=3;
 async function ajoutePhotos(liste){
-if(etapeCourante!=='photos'||occupe)return;
+if(occupe)return; /* 4/10 (Hadrien) : photos acceptées à TOUTES les étapes */
 var libres=MAX_PHOTOS-photos.length;
 var fs=Array.prototype.slice.call(liste||[]).filter(Boolean);
 if(fs.length>libres&&libres>0)bulleErreurSaisie('3 photos maximum : seules les '+libres+' première'+(libres>1?'s':'')+' ont été gardées.');
@@ -1137,14 +1144,16 @@ for(var i=0;i<fs.length;i++){
     else bulleErreurSaisie("La photo"+(nom?" « "+nom+" »":"")+" n'a pas pu être lue"+(ty?" (format "+ty+")":"")+". Formats acceptés : JPEG, PNG, WebP ; depuis un iPhone, préférez Safari ou exportez en JPEG.");
   }
 }
-montrePhotos();
+if(etapeCourante==='photos')montrePhotos();
+else if(estimationFaite&&fs.length)montreEtape('photos'); /* après le résultat : on passe à l'envoi */
+else{majVignettes();majBoutonPhoto();}
 }
 fichier.addEventListener('change',async function(){await ajoutePhotos(fichier.files);fichier.value='';});
-/* glisser-déposer sur la carte, actif seulement à l'étape photos */
+/* glisser-déposer sur la carte, à toute étape (4/10) */
 var carte=document.querySelector('.card');
-['dragenter','dragover'].forEach(function(ev){carte.addEventListener(ev,function(e){if(etapeCourante!=='photos')return;if(e.dataTransfer&&Array.prototype.some.call(e.dataTransfer.types||[],function(t){return t==='Files';})){e.preventDefault();e.dataTransfer.dropEffect='copy';carte.classList.add('glisse');}});});
+['dragenter','dragover'].forEach(function(ev){carte.addEventListener(ev,function(e){if(occupe)return;if(e.dataTransfer&&Array.prototype.some.call(e.dataTransfer.types||[],function(t){return t==='Files';})){e.preventDefault();e.dataTransfer.dropEffect='copy';carte.classList.add('glisse');}});});
 ['dragleave','drop'].forEach(function(ev){carte.addEventListener(ev,function(e){if(ev==='dragleave'&&carte.contains(e.relatedTarget))return;carte.classList.remove('glisse');});});
-carte.addEventListener('drop',function(e){if(etapeCourante!=='photos')return;if(e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files.length){e.preventDefault();ajoutePhotos(e.dataTransfer.files);}});
+carte.addEventListener('drop',function(e){if(occupe)return;if(e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files.length){e.preventDefault();ajoutePhotos(e.dataTransfer.files);}});
 document.addEventListener('dragover',function(e){e.preventDefault();});document.addEventListener('drop',function(e){e.preventDefault();}); /* hors de la carte : le navigateur n'ouvre pas l'image à la place du site */
 function redimPhoto(file){
 return new Promise(function(resolve,reject){
@@ -1175,12 +1184,24 @@ photos.forEach(function(u,i){
   var v=document.createElement('div');v.className='vign';
   var im=document.createElement('img');im.src=u;v.appendChild(im);
   var b=document.createElement('button');b.type='button';b.textContent='×';
-  b.addEventListener('click',function(){if(occupe)return;photos.splice(i,1);majVignettes();if(etapeCourante==='photos')montrePhotos();});
+  b.addEventListener('click',function(){if(occupe)return;photos.splice(i,1);majVignettes();majBoutonPhoto();if(etapeCourante==='photos')montrePhotos();});
   v.appendChild(b);
   vignettes.appendChild(v);
 });
 vignettes.classList.toggle('on',photos.length>0);
 }
+/* 4/10 : bouton d'ajout de photos présent à chaque question (la vraie valeur
+   ajoutée de l'IA, décision Hadrien) ; les photos s'accumulent (3 max, vignettes
+   sous le récapitulatif) et sont examinées à l'étape photos, avec le dossier
+   complet, comme avant. */
+function boutonPhoto(){
+var w=document.createElement('div');w.className='photo-ajout';w.id='photo-ajout';
+var b=document.createElement('button');b.type='button';
+b.addEventListener('click',function(){if(occupe)return;if(photos.length>=MAX_PHOTOS){bulleErreurSaisie('3 photos maximum.');return;}fichier.click();});
+w.appendChild(b);w._maj=function(){b.innerHTML=ICO_PHOTO+'<span>'+(photos.length===0?'Ajouter une photo du bien':photos.length>=MAX_PHOTOS?'3 photos ajoutées':photos.length+(photos.length>1?' photos ajoutées':' photo ajoutée')+' · en ajouter une')+'</span>';b.disabled=photos.length>=MAX_PHOTOS;};
+w._maj();return w;
+}
+function majBoutonPhoto(){var w=document.getElementById('photo-ajout');if(w&&w._maj)w._maj();}
 function montrePhotos(){
 majVignettes();
 var d=document.createElement('div');d.className='puces';d.id='puces-photos';
@@ -1456,8 +1477,8 @@ if(c.incertitude==='forte')l.push('· Peu de ventes proches : cette estimation e
 var manque=criteresManquants();
 if(manque.length)l.push('· Ce qui affinerait encore : '+manque.join(', ')+'.');
 l.push('');
-if(e.projet==='vente')l.push('Cette estimation vous donne une base pour fixer votre prix de vente.');
-if(e.projet==='achat')l.push('Cette estimation vous donne une base pour apprécier le prix demandé.');
+if(e.projet==='vente')l.push('Cette estimation vous donne un point de repère pour fixer votre prix de vente.'); /* 4/10 (Hadrien) : « base solide » écarté, trop présomptueux */
+if(e.projet==='achat')l.push('Cette estimation vous donne un point de repère pour apprécier le prix demandé.');
 l.push('Vous pouvez enregistrer cette étude d’estimation en PDF ou l’imprimer.'); /* 30/9 : la recommandation d'un professionnel local est un lien sous le bouton PDF */
 return l.join('\n');
 }
