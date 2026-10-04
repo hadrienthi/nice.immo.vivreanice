@@ -299,6 +299,7 @@ footer.bottom .ia{font-family:var(--font-heading);font-weight:700;font-size:21px
 .puce .fl{width:20px;height:20px;right:20px}
 .puce.sec{font-size:15px;min-height:40px;padding:6px 18px}
 .nav-etapes button{width:34px;height:34px;font-size:19px}
+.jauge-photo{font-size:12px;padding:6px 12px 6px 10px}
 .nav-etapes{align-items:center;gap:8px;justify-content:flex-start} /* 30/9 (suite) : à gauche, au-dessus de la question, plus rejetées à droite */
 .nav-legende{font-family:var(--font-body);font-size:clamp(12px,.9vw,14px);letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--color-neutral-700);margin-left:6px;order:2}
 form.saisie{padding-top:14px;position:relative}
@@ -385,12 +386,18 @@ footer.bottom .liens a{text-decoration-color:var(--accent-titre)}
 .r-alerte.ecartee{background:#f6f6f3;border-color:#8a8a8a}
 .r-alerte.ecartee .k{color:#555}
 .msg.ana.note.alerte{border-left:6px solid var(--rouge);background:#fff7f0;border-radius:0 14px 14px 0;padding:12px 18px}
-.photo-ajout{margin:-4px 0 6px}
-.photo-ajout button{display:inline-flex;align-items:center;gap:8px;border:1px dashed var(--rouge);color:var(--rouge);background:#fff7f0;border-radius:999px;padding:7px 14px 7px 12px;font-family:var(--font-body);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
-.photo-ajout button svg{width:18px;height:18px}
-.photo-ajout button:hover{background:var(--rouge);color:#fff}
-.photo-ajout button:disabled{border-style:solid;opacity:.7;cursor:default;background:#fff7f0;color:var(--rouge)}
-@media print{.photo-ajout{display:none}}
+.jauge-ligne{flex-wrap:wrap;align-items:center;row-gap:8px}
+.jauge-etape{margin-left:auto}
+.jauge-photo{display:inline-flex;align-items:center;gap:8px;border:1px dashed var(--rouge);color:var(--rouge);background:#fff7f0;border-radius:999px;padding:6px 14px 6px 11px;font-family:var(--font-body);font-size:clamp(12px,.95vw,16px);font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;line-height:1.2}
+.jauge-photo svg{width:18px;height:18px;flex:none}
+.jauge-photo:hover{background:var(--rouge);color:#fff}
+.jauge-photo.plein{border-style:solid}
+.nav-bas{margin:18px 0 0;justify-content:flex-start;gap:10px}
+.nav-bas.vide{display:none}
+.nav-bas .nav-btn{width:auto;height:40px;border-radius:999px;padding:0 16px;display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.nav-bas .nav-btn .fl{font-size:20px;line-height:1;position:relative;top:-1px}
+@media (max-width:640px){.jauge-ligne{align-items:flex-start}.jauge-lib{order:1;flex:1 1 auto}.jauge-etape{order:2;margin-left:auto}.jauge-photo{order:3;flex:0 0 auto}}
+@media print{.jauge-photo,.nav-bas{display:none}}
 .msg.sys.alerte{border:1.5px solid var(--rouge);border-left-width:6px;border-style:solid;border-radius:14px;background:#fff7f0;color:#111;font-size:17px;padding:12px 18px}
 @media print{.r-alerte{background:#fff}.r-alerte .btn{display:none}}
 </style>
@@ -417,7 +424,7 @@ footer.bottom .liens a{text-decoration-color:var(--accent-titre)}
 
     <section class="card" aria-label="Estimation de votre bien">
       <div class="jauge" id="jauge">
-        <div class="jauge-ligne"><span class="jauge-lib" id="jauge-lib">Votre estimation en PDF<br class="mob"> dès la fin de l’échange avec l’IA.</span><span class="jauge-etape" id="jauge-etape">7&nbsp;%</span></div>
+        <div class="jauge-ligne"><span class="jauge-lib" id="jauge-lib">Votre estimation en PDF<br class="mob"> dès la fin de l’échange avec l’IA.</span><button type="button" class="jauge-photo" id="jauge-photo" aria-label="Ajouter une photo du bien"></button><span class="jauge-etape" id="jauge-etape">7&nbsp;%</span></div>
         <div class="jauge-barre" aria-hidden="true"><i id="jauge-fill"></i></div>
         <p class="jauge-avert" id="jauge-avert" hidden>Plus il y a de réponses, plus l’estimation est précise.</p>
       </div>
@@ -434,6 +441,7 @@ footer.bottom .liens a{text-decoration-color:var(--accent-titre)}
           <input type="file" id="fichier" accept="image/*" multiple hidden>
         </div>
       </form>
+      <div class="nav-etapes nav-bas vide" id="nav-bas" aria-label="Navigation entre les questions"></div>
     </section>
 
     <section class="confiance" aria-label="À savoir">
@@ -666,7 +674,7 @@ var dossier={},repondu={},photos=[],commentairePhotos='';
 var etapeCourante=null,modeSaisie=null,occupe=false,noteGabarit='',estimationFaite=false,noteEnvoyee=false;
 var cr=null,dernierBien=null,dernierTexte='';
 function recale(){flux.scrollTop=0;}
-function videFlux(){attente.classList.remove('on');flux.innerHTML='';}
+function videFlux(){attente.classList.remove('on');flux.innerHTML='';var nb=document.getElementById('nav-bas');if(nb){nb.innerHTML='';nb.classList.add('vide');}}
 function penser(on,txt){attente.classList.toggle('on',on);if(on){attente.querySelector('.txt').textContent=txt||'Un instant…';flux.appendChild(attente);}}
 function bulle(cls,qui,txt){
 var d=document.createElement('div');d.className='msg '+cls;
@@ -859,26 +867,22 @@ var e=ETAPES[id],texte=e.question();
    30/9 (Hadrien) : conservées après l'estimation, › ramène au résultat */
 {
 var oNav=ordre(),ixNav=oNav.indexOf(id);
-var nv=document.createElement('div');nv.className='nav-etapes';
-var bp=document.createElement('button');bp.type='button';bp.textContent='‹';bp.setAttribute('aria-label','Question précédente');
+var nv=document.getElementById('nav-bas');nv.innerHTML=''; /* 4/10 (Hadrien) : flèches SOUS la question et le champ de saisie, avec libellés, elles suivent le contenu */
+var bp=document.createElement('button');bp.type='button';bp.className='nav-btn';bp.innerHTML='<span class="fl">‹</span><span class="lb">Retour</span>';bp.setAttribute('aria-label','Question précédente');
 bp.disabled=ixNav<=0;
 bp.addEventListener('click',function(){if(occupe)return;var o2=ordre(),i2=o2.indexOf(etapeCourante);if(i2>0)montreEtape(o2[i2-1]);});
-var bs=document.createElement('button');bs.type='button';bs.textContent='›';bs.setAttribute('aria-label',estimationFaite&&ixNav>=oNav.length-1?'Retour au résultat':'Question suivante');
+var versResultat=estimationFaite&&ixNav>=oNav.length-1;
+var bs=document.createElement('button');bs.type='button';bs.className='nav-btn';bs.innerHTML='<span class="lb">'+(versResultat?'Résultat':'Suite')+'</span><span class="fl">›</span>';bs.setAttribute('aria-label',versResultat?'Retour au résultat':'Question suivante');
 bs.disabled=!(repondu[id]&&(ixNav<oNav.length-1||estimationFaite));
 bs.addEventListener('click',function(){if(occupe)return;var o2=ordre(),i2=o2.indexOf(etapeCourante);if(!repondu[etapeCourante])return;if(i2<o2.length-1)montreEtape(o2[i2+1]);else if(estimationFaite)retourResultat();});
 nv.appendChild(bp);nv.appendChild(bs);
-if(bp.disabled&&bs.disabled)nv.classList.add('vide'); /* première question : pas de flèches, comme la maquette */
-flux.appendChild(nv);
+nv.classList.toggle('vide',bp.disabled&&bs.disabled); /* première question : pas de flèches */
 }
 montreAlertes(); /* 4/10 : contrôle de cohérence (gabarit compris), en orange */
-if(id!=='photos')flux.appendChild(boutonPhoto()); /* 4/10 (Hadrien) : l'ajout de photos est possible à toutes les étapes */
+majBoutonPhoto();
 if(id==='photos'&&!estimationFaite)lanceAnticipation(); /* 26/9 : le résultat se prépare pendant l'étape photos */
 var d=bulle('ana','Nice.immo','');
-if(id==='projet'||id==='photos'){ /* kicker photos (cahier, point 7) : accueil et étape photos seulement */
-var tete=document.createElement('div');tete.className='q-tete';
-tete.innerHTML='<span class="q-icone" aria-hidden="true">'+ICO_PHOTO+'</span><div class="q-col"><p class="q-kicker"><span class="rouge">L’IA</span> peut analyser vos photos</p></div>';
-flux.insertBefore(tete,d);tete.querySelector('.q-col').appendChild(d);
-}
+/* 4/10 (Hadrien) : plus d'icône grise ni de kicker à la question ; « L'IA peut analyser vos photos » est le bouton photo de la ligne de jauge, présent à toutes les étapes */
 var reduit=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 clearTimeout(minuterieQ);
 if(reduit){d.appendChild(document.createTextNode(typo(texte)));montreReponses(id);}
@@ -1194,14 +1198,13 @@ vignettes.classList.toggle('on',photos.length>0);
    ajoutée de l'IA, décision Hadrien) ; les photos s'accumulent (3 max, vignettes
    sous le récapitulatif) et sont examinées à l'étape photos, avec le dossier
    complet, comme avant. */
-function boutonPhoto(){
-var w=document.createElement('div');w.className='photo-ajout';w.id='photo-ajout';
-var b=document.createElement('button');b.type='button';
-b.addEventListener('click',function(){if(occupe)return;if(photos.length>=MAX_PHOTOS){bulleErreurSaisie('3 photos maximum.');return;}fichier.click();});
-w.appendChild(b);w._maj=function(){b.innerHTML=ICO_PHOTO+'<span>'+(photos.length===0?'Ajouter une photo du bien':photos.length>=MAX_PHOTOS?'3 photos ajoutées':photos.length+(photos.length>1?' photos ajoutées':' photo ajoutée')+' · en ajouter une')+'</span>';b.disabled=photos.length>=MAX_PHOTOS;};
-w._maj();return w;
+var jPhoto=document.getElementById('jauge-photo');
+jPhoto.addEventListener('click',function(){if(occupe)return;if(photos.length>=MAX_PHOTOS){bulleErreurSaisie('3 photos maximum.');return;}fichier.click();});
+function majBoutonPhoto(){
+jPhoto.innerHTML=ICO_PHOTO+'<span>L’IA peut analyser vos photos'+(photos.length?' · '+photos.length+'/'+MAX_PHOTOS:'')+'</span>';
+jPhoto.classList.toggle('plein',photos.length>=MAX_PHOTOS);
 }
-function majBoutonPhoto(){var w=document.getElementById('photo-ajout');if(w&&w._maj)w._maj();}
+majBoutonPhoto();
 function montrePhotos(){
 majVignettes();
 var d=document.createElement('div');d.className='puces';d.id='puces-photos';
