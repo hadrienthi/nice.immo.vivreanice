@@ -18,132 +18,150 @@
 <meta name="twitter:title" content="Vivre à Nice : une ville à vivre autant qu'à visiter">
 <meta name="twitter:description" content="Vivre à Nice, entre Méditerranée et collines : Carré d'Or, Cimiez, Libération, Mont-Boron, le Port, Vieux-Nice.">
 <meta name="twitter:image" content="https://nice.immo/og-vivre-nice.jpg">
-<meta name="theme-color" content="#f3f2f2">
+<meta name="theme-color" content="#0f3d2e">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nice.immo","item":"https://nice.immo/"},{"@type":"ListItem","position":2,"name":"Vivre à Nice","item":"https://nice.immo/vivre-a-nice/"}]},{"@type":"Article","headline":"Vivre à Nice : une ville à vivre autant qu'à visiter","image":"https://nice.immo/og-vivre-nice.jpg","datePublished":"2026-09-07","dateModified":"2026-09-07","inLanguage":"fr","author":{"@type":"Organization","name":"Nice.immo"},"publisher":{"@type":"Organization","name":"Nice.immo","url":"https://nice.immo/"},"mainEntityOfPage":"https://nice.immo/vivre-a-nice/","description":"Vivre à Nice, entre Méditerranée et collines : les quartiers, leurs manières d'habiter la ville, et Nice en quelques chiffres."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nice.immo","item":"https://nice.immo/"},{"@type":"ListItem","position":2,"name":"Vivre à Nice","item":"https://nice.immo/vivre-a-nice/"}]},{"@type":"Article","headline":"Vivre à Nice : une ville à vivre autant qu'à visiter","image":"https://nice.immo/og-vivre-nice.jpg","datePublished":"2026-09-07","dateModified":"2026-10-05","inLanguage":"fr","author":{"@type":"Organization","name":"Nice.immo"},"publisher":{"@type":"Organization","name":"Nice.immo","url":"https://nice.immo/"},"mainEntityOfPage":"https://nice.immo/vivre-a-nice/","description":"Vivre à Nice, entre Méditerranée et collines : les quartiers, leurs manières d'habiter la ville, et Nice en quelques chiffres."}]}</script>
 <link rel="preload" as="image" href="../vivre-nice-baie-des-anges-1800.webp" media="(min-width:821px)">
 <link rel="preload" as="image" href="../vivre-nice-baie-des-anges-800.webp" media="(max-width:820px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
-/* Charte « Classical » de la maquette nice.immo du 4/9 : mêmes jetons. */
+/* 5/10/2026 (demande Hadrien) : page alignée sur la charte verte « cadre » de l'accueil
+   (rendu n°3 du 3/10) : mêmes jetons, mêmes polices (Playfair Display pour les titres et
+   le texte, Libre Franklin pour l'interface), en-tête, bande du titre et pied en vert
+   profond, corps crème clair, accent orange unique. Textes et photos inchangés.
+   Ancienne charte « Classical » : ateliers/sauvegarde-vivre-a-nice-2026-10-05-avant-vert.html */
 :root{
-  --color-bg:#f3f2f2;--color-surface:#eae9e9;--color-text:#201f1d;
-  --color-accent:#b68235;--color-accent-100:#fff3e4;--color-accent-200:#ffe3bf;--color-accent-700:#7d5411;
-  --color-neutral-300:#d7d3d3;--color-neutral-500:#9b9797;--color-neutral-700:#605d5d;--color-neutral-800:#444141;
-  --color-divider:rgba(32,31,29,.16);
-  --font-heading:"Cormorant Garamond",Georgia,serif;--font-body:"Lora",Georgia,serif;
-  --radius-sm:2px;--radius-md:4px;--radius-lg:7px;
-  --shadow-sm:0 1px 2px rgba(45,43,43,.14);
-  --pad:48px;--maxw:1480px;
+  --vert:#0f3d2e;--creme:#f4efe4;--creme-page:#faf8f3;--accent:#d9641f;--accent-titre:#e8713a;
+  --color-text:#111;--color-neutral-700:#444;--color-neutral-800:#222;
+  --color-divider:#ddd7ca;--bord-carte:#cfc9bc;
+  --font-heading:"Playfair Display",Georgia,serif;--font-body:"Libre Franklin",Arial,sans-serif;
+  --font-texte:"Playfair Display",Georgia,serif;
+  --radius-lg:12px;
+  --pad:52px;--maxw:1665px;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);font-size:17px;line-height:1.65}
+html{scroll-behavior:smooth;background:var(--creme-page)}
+body{font-variant-numeric:lining-nums;margin:0;background:var(--creme-page);color:var(--color-text);font-family:var(--font-texte);font-size:18px;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
 a{color:inherit;text-decoration:none}
-a:hover{color:var(--color-accent-700)}
 img{display:block;max-width:100%;height:auto}
-h1,h2,h3{font-family:var(--font-heading);font-weight:600;line-height:1.12;letter-spacing:.2px;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--font-heading);font-weight:700;line-height:1.14;letter-spacing:-.02em;margin:0;text-wrap:balance}
 p{margin:0 0 14px}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
-.plate{filter:sepia(.14) saturate(.9) contrast(1.04);border:6px solid var(--color-surface);outline:1px solid var(--color-divider);background:var(--color-surface)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad);width:100%}
+.point{color:var(--accent)}
+:focus-visible{outline:2px solid var(--vert);outline-offset:3px}
+.plate{border-radius:var(--radius-lg);overflow:hidden;background:#e9e4d8}
 .plate img{width:100%;height:100%;object-fit:cover}
-.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);font-weight:600;margin:0 0 12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 28px;border:1px solid var(--color-accent);border-radius:var(--radius-sm);color:var(--color-accent-700);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
-.btn:hover{background:var(--color-accent-100)}
-.btn:active{background:var(--color-accent-200)}
-.src{font-size:12.5px;color:var(--color-neutral-700);margin-top:14px}
+.kicker{font-family:var(--font-body);font-size:clamp(12px,.95vw,15px);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;height:56px;padding:0 30px;border:1px solid #111;border-radius:999px;color:#fff;background:#111;font-family:var(--font-body);font-size:17px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;cursor:pointer}
+.btn:hover{background:#333;border-color:#333}
+.src{font-family:var(--font-body);font-size:13.5px;color:var(--color-neutral-700);margin-top:14px}
 
-/* En-tête, repris de la maquette */
-header.top{border-bottom:1px solid var(--color-divider)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:20px;padding-bottom:20px}
-.brand{font-family:var(--font-heading);font-size:38px;font-weight:600;line-height:1;letter-spacing:.5px}
-.brand span{color:var(--color-accent-700)}
-nav.menu{display:flex;align-items:center;gap:28px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
-nav.menu a[aria-current]{color:var(--color-accent-700);border-bottom:1px solid var(--color-accent)}
+/* En-tête : celui de l'accueil */
+header.top{background:var(--vert)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px;padding-bottom:14px}
+.brand{font-family:var(--font-heading);font-size:58px;font-weight:700;line-height:1;letter-spacing:-.02em;color:var(--creme)}
+header.top .brand .point{color:var(--accent-titre)}
+nav.menu{display:flex;align-items:center;gap:44px;font-family:var(--font-body);font-size:16px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--creme)}
+nav.menu a{padding:6px 0;border-bottom:2px solid transparent}
+nav.menu a:hover,nav.menu a[aria-current]{border-bottom-color:var(--accent-titre)}
 
-/* Héros */
-.hero{padding:56px 0 48px}
-.hero .wrap{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:center}
-.hero h1{font-size:60px;font-weight:500}
-.hero h1 em{font-style:italic;color:var(--color-accent-700)}
-.hero .lead{font-size:20px;line-height:1.6;color:var(--color-neutral-800);margin:22px 0 0;max-width:560px}
+main{flex:1}
+
+/* Héros : la bande verte du titre, en continuité de l'en-tête */
+.hero{background:var(--vert);color:var(--creme);padding:44px 0 60px;margin-top:-1px}
+.hero .wrap{display:grid;grid-template-columns:5fr 7fr;gap:52px;align-items:center}
+.hero .kicker{color:var(--accent-titre)}
+.hero h1{font-size:clamp(34px,3.9vw,62px);line-height:1.12}
+.hero h1 em{font-style:italic;color:var(--accent-titre)}
+.hero .lead{font-size:20px;line-height:1.55;margin:24px 0 0;max-width:580px}
 .hero .lead p{margin:0 0 12px}
-.hero .plate{aspect-ratio:3/2}
+.hero .plate{aspect-ratio:3/2;background:#174a39;box-shadow:0 14px 34px rgba(0,0,0,.28)}
 
 /* Sections */
-section.block{padding:56px 0;border-top:1px solid var(--color-divider)}
-section.block h2{font-size:40px;font-weight:500;margin-bottom:18px}
+section.block{padding:60px 0}
+section.block+section.block .wrap::before{content:'';display:block;height:1px;background:var(--color-divider);margin:0 0 60px}
+section.block+section.block{padding-top:0}
+section.block h2{font-size:clamp(28px,2.7vw,42px);margin-bottom:20px}
 .text p{max-width:62ch}
 .plate.wide{aspect-ratio:2.2/1}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .pair .plate{aspect-ratio:4/3}
 
 /* Quartiers : alternance texte / photo */
-.q{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:36px 0;border-top:1px solid var(--color-divider)}
-.q:first-of-type{border-top:0;padding-top:24px}
+.q{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:40px 0;border-top:1px solid var(--color-divider)}
+.q:first-of-type{border-top:0;padding-top:32px}
+.q:last-of-type{padding-bottom:0}
 .q.rev .text{order:2}
 .q .plate{aspect-ratio:4/3}
-.q h3{font-size:34px;font-weight:500}
-.q h3 em{font-style:italic;color:var(--color-accent-700)}
+.q h3{font-size:clamp(26px,2.3vw,36px);margin-bottom:14px}
+.q h3 em{font-style:italic;color:var(--accent)}
 .q .text p{color:var(--color-neutral-800)}
+.q .text p.kicker{color:var(--accent)}
 
 /* Chiffres INSEE */
-.figures{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 28px;margin:30px 0 6px}
-.figure{border-top:1px solid var(--color-accent);padding-top:14px}
-.figure b{display:block;font-family:var(--font-heading);font-weight:500;font-size:46px;line-height:1.05;color:var(--color-accent-700);white-space:nowrap}
-.figure span{display:block;font-size:14.5px;line-height:1.45;color:var(--color-neutral-800);margin-top:6px}
+.figures{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 28px;margin:30px 0 6px}
+.figure{border-top:2px solid var(--accent);padding-top:14px}
+.figure b{display:block;font-family:var(--font-heading);font-weight:700;font-size:clamp(34px,3.2vw,50px);line-height:1.05;letter-spacing:-.015em;color:var(--vert);white-space:nowrap}
+.figure span{display:block;font-family:var(--font-body);font-size:15px;line-height:1.45;color:var(--color-neutral-800);margin-top:8px}
 
 /* Où vivre à Nice */
-.where{list-style:none;margin:22px 0 0;padding:0;max-width:880px}
-.where li{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:14px 0;border-top:1px solid var(--color-divider);font-size:18px}
+.where{list-style:none;margin:22px 0 0;padding:0;max-width:920px}
+.where li{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:15px 0;border-top:1px solid var(--color-divider);font-size:19px}
 .where li:last-child{border-bottom:1px solid var(--color-divider)}
-.where li span:last-child{font-family:var(--font-heading);font-size:24px;font-weight:600;color:var(--color-accent-700);white-space:nowrap}
+.where li span:last-child{font-family:var(--font-heading);font-size:22px;font-weight:700;color:var(--vert);white-space:nowrap}
 
-/* Appel à l'estimation */
-.cta{border-top:1px solid var(--color-divider);padding:64px 0}
-.cta .box{border:1px solid var(--color-divider);border-radius:var(--radius-md);background:var(--color-surface);box-shadow:var(--shadow-sm);padding:44px 48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-.cta h2{font-size:40px;font-weight:500;margin-bottom:10px}
-.cta h2 em{font-style:italic;color:var(--color-accent-700)}
-.cta p{margin:0;font-size:19px;color:var(--color-neutral-800);max-width:640px}
-.cta .btn{height:52px;padding:0 34px;font-size:14px}
+/* Appel à l'estimation : la carte blanche de l'accueil */
+.cta{padding:8px 0 72px}
+.cta .box{border:1.5px solid var(--bord-carte);border-radius:var(--radius-lg);background:#fff;box-shadow:0 10px 30px rgba(15,61,46,.12);padding:44px 48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.cta h2{font-size:clamp(28px,2.7vw,42px);margin-bottom:10px}
+.cta p{margin:0;font-size:20px;color:var(--color-neutral-800);max-width:640px}
 
-footer.bottom{border-top:1px solid var(--color-divider)}
-footer.bottom .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;padding-top:16px;padding-bottom:18px;font-size:13px;color:var(--color-neutral-700)}
-footer.bottom a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--color-accent)}
-footer.bottom .ia{margin-left:auto;font-size:11px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
-footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:600;letter-spacing:.06em;color:var(--color-accent-700)}
+/* Pied : celui de l'accueil */
+footer.bottom{background:var(--vert);color:var(--creme);margin-top:auto}
+footer.bottom .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px 38px;padding-top:22px;padding-bottom:26px;font-family:var(--font-body);font-size:16px}
+footer.bottom .liens{display:flex;flex-wrap:wrap;gap:12px 38px;margin:0 auto}
+footer.bottom .liens a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;text-decoration-color:var(--accent-titre)}
+footer.bottom .ia{font-family:var(--font-heading);font-size:21px;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+footer.bottom .ia .point{color:var(--accent-titre)}
 
 @media (max-width:1100px){
-  .hero h1{font-size:48px}
+  nav.menu{gap:26px}
+  .brand{font-size:44px}
+  .hero .wrap{gap:36px}
   .q{gap:36px}
-  .figure b{font-size:38px}
 }
 @media (max-width:820px){
-  :root{--pad:20px}
-  body{font-size:16px}
-  .brand{font-size:30px}
-  nav.menu{gap:16px;font-size:12px}
-  .hero{padding:32px 0 36px}
-  .hero .wrap{grid-template-columns:1fr;gap:28px}
-  .hero h1{font-size:40px}
-  .hero .lead{font-size:18px}
+  :root{--pad:16px}
+  body{font-size:17px}
+  header.top .wrap{flex-wrap:wrap;gap:8px 16px;padding-top:14px;padding-bottom:12px}
+  .brand{font-size:36px}
+  nav.menu{width:100%;justify-content:space-between;gap:10px;font-size:12.5px;letter-spacing:.03em}
+  nav.menu a{padding:4px 0}
+  .hero{padding:26px 0 36px}
+  .hero .wrap{grid-template-columns:1fr;gap:26px}
+  .hero .lead{font-size:18px;margin-top:18px}
   section.block{padding:40px 0}
-  section.block h2{font-size:32px}
-  .q{grid-template-columns:1fr;gap:20px;padding:28px 0}
+  section.block+section.block .wrap::before{margin-bottom:40px}
+  .q{grid-template-columns:1fr;gap:20px;padding:30px 0}
   .q.rev .text{order:0}
-  .q h3{font-size:28px}
   .figures{grid-template-columns:1fr 1fr;gap:18px 20px}
-  .where li{grid-template-columns:1fr;gap:4px;font-size:16px}
-  .where li span:last-child{font-size:21px}
-  .cta .box{grid-template-columns:1fr;padding:28px 22px;gap:22px}
-  .cta h2{font-size:32px}
-  footer.bottom .ia{margin-left:0}
+  .where li{grid-template-columns:1fr;gap:4px;font-size:17px}
+  .where li span:last-child{font-size:20px;white-space:normal}
+  .cta{padding-bottom:48px}
+  .cta .box{grid-template-columns:1fr;padding:26px 20px;gap:22px}
+  .cta .btn{white-space:normal;height:auto;min-height:56px;padding:12px 22px;text-align:center}
+  footer.bottom .liens{margin:0}
 }
 @media (max-width:480px){
   .pair{grid-template-columns:1fr}
   .figures{grid-template-columns:1fr}
+}
+@media print{
+  header.top,footer.bottom,.hero{background:#fff;color:#111}
+  header.top .brand,nav.menu,footer.bottom a,footer.bottom .ia{color:#111}
+  .hero .plate,.cta .box{box-shadow:none}
 }
 </style>
 </head>
@@ -151,10 +169,11 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="../" aria-label="Nice.immo, accueil">NICE.<span>IMMO</span></a>
+    <a class="brand" href="../" aria-label="Nice.immo, accueil">NICE<span class="point">.</span>IMMO</a>
     <nav class="menu" aria-label="Navigation">
       <a href="../">Estimer un bien</a>
       <a href="../vivre-a-nice/" aria-current="page">Vivre à Nice</a>
+      <a href="mailto:contact@nice.immo?subject=Partenariat%20Nice.immo">Partenariat</a>
     </nav>
   </div>
 </header>
@@ -311,11 +330,13 @@ footer.bottom .ia b{font-family:var(--font-heading);font-size:15px;font-weight:6
 
 <footer class="bottom">
   <div class="wrap">
-    <span>Nice.immo est un service privé indépendant et n'est ni exploité, ni édité, ni affilié à la Ville de Nice.</span>
-    <a href="../mentions-legales/">Mentions légales</a>
-    <a href="../confidentialite/">Confidentialité et données personnelles</a>
-    <a href="mailto:contact@nice.immo">Contact</a>
-    <span class="ia">Motoriste <b>IA.IMMO</b></span>
+    <span>Nice.immo est un service privé indépendant de la Ville de Nice.</span>
+    <span class="liens">
+      <a href="../mentions-legales/">Mentions légales</a>
+      <a href="../confidentialite/">Confidentialité et données personnelles</a>
+      <a href="mailto:contact@nice.immo">Contact</a>
+    </span>
+    <span class="ia">IA<span class="point">.</span>IMMO</span>
   </div>
 </footer>
 
